@@ -1,0 +1,99 @@
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+  
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+#particles-js {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-head {
+    @include flex(center, center, column);
+    text-align: center;
+
+    h2 {
+  background: -webkit-linear-gradient(rgb(231, 231, 231), #394a5a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-size: 6rem;
+  font-weight: 300;
+  text-align: center;
+  font-weight: 800;
+    }
+.syncro-cont {
+    img {
+        width: 80%;
+    }
+}
+
+}
+a {
+    position: relative;
+    padding: 15px 39px;
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px; 
+    text-decoration: none;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
+// span {
+// position: absolute;
+// background: #fff;
+// transform: translate(-50%, -50%);
+// pointer-events: none; 
+// border-radius: 50%;
+// animation: animate 1s linear infinite;
+// }
+
+// @keyframes animate {
+//     0% {
+//         width: 0;
+//         height: 0;
+//         opacity: 0.2;
+//     }
+//     100% {
+//         width: 500px;
+//         height: 500px;
+//         opacity: 0;
+//     }
+// }
+//////////////////////////////////////////////////////////////////
+
+
+

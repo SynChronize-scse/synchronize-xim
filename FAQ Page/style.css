@@ -1,0 +1,253 @@
+.faq-section {
+    background: rgb(10, 0, 15);
+    min-height: 100vh;
+    padding: 10vh 0 0;
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #E91E63;
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: beige;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #E91E63;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 400;
+    list-style-type: none;
+    font-style: normal;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  nav {
+    line-height: 1.4;
+    font-family: "Space Mono", monospace;
+    background: #1d1f20;
+    padding: 25px 35px;
+    width: 300px;
+    top: calc(50vh - 247px);
+    left: calc(50vw - 150px);
+    position: fixed;
+    border-radius: 16px;
+    box-shadow: 0 0 60px -15px black;
+    transform: scale(0) rotate(360deg);
+    transition: all 0.75s;
+    font-size: 18px;
+    z-index: 999;
+  }
+  
+  nav.menu_active {
+    transform: scale(1) rotate(0deg);
+    z-index: 999;
+  }
+  
+  nav > ol > li {
+    margin: 20px 0;
+    color: #b5bc67;
+  }
+  
+  nav > ol > li:first-of-type {
+    color: #efc371;
+  }
+  
+  nav > ol > li > ol {
+    margin: 10px 0 0 20px;
+    border-left: 1px solid #4d4d4c;
+    color: #ae94c0;
+  }
+  
+  nav > ol > li > ol > li {
+    margin: 7px 0;
+    padding-left: 20px;
+  }
+  
+  nav a:hover {
+    color: #dd925f;
+  }
+  
+  h3 {
+    position: fixed;
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    color: #cfd8dc;
+    top: 30px;
+    left: 90%;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 999;
+  }
+  
+  .menu h3:hover {
+    border-bottom: 6px dotted #cfd8dc;
+    padding-bottom: 10px;
+    top: 20px;
+  }
+  
+  .menu p {
+    font-family: "Roboto Mono", monospace;
+    float: right;
+    cursor: pointer;
+    font-size: 16px;
+    color: #cfd8dc;
+    transition: all 0.2s;
+  }
+  .button1 {
+    color: white;
+    background-color: #2d7eff;
+    border: 5px solid transparent;
+    transition: 0.2s ease;
+    border-radius: 50px;
+  }
+  .button1:hover {
+    color: #2d7eff;
+    background-color: white;
+    transform: scale(1.1);
+    border: 5px solid #2d7eff;
+  }
+  .button1:active {
+    box-shadow: 0px 7px 0px 0px #258cd1;
+  }
+
+  .menu p:hover {
+    border-bottom: 2px dotted #cfd8dc;
+    padding-bottom: 5px;
+  }
+  
+  @media (max-width: 1194px) {
+    h3 {
+      top: 20px;
+      left: 80%;
+      font-size: 1.4rem;
+    }
+    .PosterButton{
+      top: 70%;
+      border-radius: 50px;
+      left: 30%;
+    }
+  }
+  @media (max-width: 600px) {
+    h3 {
+      top: 20px;
+      left: 70%;
+      font-size: 1.4rem;
+    }
+    .navlogo img{
+      top:10%;
+      width: 85%;
+      text-align: center;
+    }
+  
+  }

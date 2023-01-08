@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#particles-js {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.899)), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main-head h2 {
+  background: -webkit-linear-gradient(#e7e7e7, #394a5a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  font-weight: 300;
+  text-align: center;
+  font-weight: 800;
+}
+
+.main-head .syncro-cont img {
+  width: 80%;
+}
+
+a {
+  position: relative;
+  padding: 15px 39px;
+  margin: 10px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #fff;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  html{
+    padding: 0;
+    margin: 0;
+  }
+  .main-head h2{
+    font-size: 25px;
+  }
+  .main-head .syncro-cont img {
+    width: 46vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  #particles-js{
+    position: unset;
+  }
+}
