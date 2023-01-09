@@ -114,7 +114,7 @@ nav{
 } */
 
 #particles-js {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url(../6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/BZzVwTWd/6.jpg');
     background-size: cover;
     height: 100vh;
     position: absolute;
