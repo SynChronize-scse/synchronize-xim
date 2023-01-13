@@ -35,7 +35,7 @@ text {
     font-size: 8rem;
     stroke: #3cff00;
     stroke-width: 2px;
-    stroke-dasharray: 900;
+    stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     fill: rgba(45, 2, 32, 0.845);
     animation: dash 5s ease-out alternate infinite;
