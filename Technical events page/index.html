@@ -213,6 +213,20 @@
             <p>21.01.23</p>
           </div>
           <p class="item-date">11am -Computer Lab</p>
+            <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+                            Details - TBD<br>
+                            
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div> 
         </div>
         <div class="item">
           <img
@@ -226,6 +240,19 @@
             <p>20.1.23</p>
           </div>
           <p class="item-date">3pm -Computer Lab</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+                            Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div> 
         </div>
         <div class="item">
           <img
@@ -238,6 +265,19 @@
             <p>21.01.23</p>
           </div>
           <p class="item-date">2pm -Football Ground</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div>
         </div>
         <div class="item">
           <img
@@ -251,6 +291,19 @@
             <p>20.01.23</p>
           </div>
           <p class="item-date">1:30pm -CR314</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div>
         </div>
         <div class="item">
           <img
@@ -264,6 +317,19 @@
             <p>22.01.23</p>
           </div>
           <p class="item-date">11am -Exam Hall</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div>
         </div>
         <div class="item">
           <img
@@ -277,6 +343,19 @@
             <p>21.01.23</p>
           </div>
           <p class="item-date">2pm -Across Campus</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div>
         </div>
         <div class="item">
           <img
@@ -290,6 +369,19 @@
             <p>20.01.23</p>
           </div>
           <p class="item-date">3pm -Computer Lab</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div>
         </div>
         <div class="item">
           <img
@@ -303,6 +395,19 @@
             <p>22.01.23</p>
           </div>
           <p class="item-date">11am</p>
+          <div class="Click-here">View Details</div>        
+              <div class="custom-model-main">
+                  <div class="custom-model-inner">        
+                  <div class="close-btn">×</div>
+                      <div class="custom-model-wrap">
+                          <div class="pop-up-content-wrap">
+                            Prize - TBD<br>
+                            Details - TBD
+                          </div>
+                      </div>  
+                  </div>  
+                  <div class="bg-overlay"></div>
+              </div>
         </div>
       </div>
      
@@ -333,6 +438,13 @@
         Copyright &copy; SynChronize 2023
       </p>
     </section>
-    
+    <script>
+      $(".Click-here").on('click', function() {
+      $(".custom-model-main").addClass('model-open');
+    }); 
+    $(".close-btn, .bg-overlay").click(function(){
+      $(".custom-model-main").removeClass('model-open');
+    });
+    </script>
   </body>
 </html>
