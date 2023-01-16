@@ -932,7 +932,7 @@ section.footer{
   }
   body {
       width: 100%;
-      min-height: 100vh;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
       padding: 0;
@@ -946,7 +946,9 @@ section.footer{
       background-color: rgb(15, 12, 12);
       transform: translateY(57rem);
   }
-
+  .landingpage{
+    min-height: 100%;
+  }
 
 }
 
