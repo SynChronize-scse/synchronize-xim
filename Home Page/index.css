@@ -113,13 +113,15 @@ nav{
     background-size: cover;
 } */
 
-.first-section {
+#particles-js {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/BZzVwTWd/6.jpg');
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+    position: absolute;
     overflow: hidden;
     align-items: center;
     background-size: cover;
+    z-index: 5;
 
 }
 .hero-cont {
@@ -184,84 +186,42 @@ nav{
     color: black;
     transition: 0.5s;
     border-color: #000;
-}
 
-
-
-
-
-
-.about-section {
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.abt-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 1 1 20rem;
-    width: 95%;
-    margin: auto;
 }
 #about {
-    flex: 1 1 20rem;
-    padding: 0 2rem;
-}
-.video-container {
-    flex: 1 1 20rem;
-    width: 100%;
-    max-height: 100%;
-    padding: 1.2rem 1.2rem;
-}
-video {
-    width: 100%;
-    height: 100%;
-
+    min-height: 60vh;
 }
 #about h2 {
     color: #fff;
+    transform: translateY(105vh);
+    padding-left: 3rem;
     font-family: 'Poppins', sans-serif;
-    --min: 2.2rem;   /* minimum value */
-    --val: 5vw;     /* preferred value = 4% viewport width */
-    --max: 2.4rem;
-    font-size: clamp(var(--min), var(--val), var(--max));
+    font-size: 2.2rem;
     letter-spacing: 0.15rem;
-    padding: 1rem 0 1.5rem 0;
 }
+
 #about .content {
     color: #fff;
-    --min: 1rem;   /* minimum value */
-    --val: 3vw;     /* preferred value = 4% viewport width */
-    --max: 1.2rem;
-    font-size: clamp(var(--min), var(--val), var(--max));
+    transform: translateY(110vh);
+    padding-left: 3rem;
+    padding-right: 45rem;
+    font-size: 20px;
     line-height: 2rem;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
-
-
-
-
-.planned-events {
-    min-height: 70vh;
-}
 .planned-events h3 {
     color: #fff;
+    transform: translateY(25em);
     padding-left: 3rem;
     font-family: 'Poppins', sans-serif;
-    --min: 2.2rem;   /* minimum value */
-    --val: 5vw;     /* preferred value = 4% viewport width */
-    --max: 2.4rem;
-    font-size: clamp(var(--min), var(--val), var(--max));
-    padding-top: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 0.15rem;
 }
 
 .card-container {
+    transform: translateY(57em);
     color: rgb(253, 253, 253);
     display: flex;
     justify-content: center;
@@ -359,6 +319,7 @@ video {
 .footer {
     padding: 40px 0;
     background-color: rgb(15, 12, 12);
+    transform: translateY(55rem);
     margin-top: auto;
 }
 
@@ -521,18 +482,23 @@ video {
     body {
         width: 100%;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
         padding: 0;
         margin: 0;
         overflow-x: hidden;
     }
-    .first-section {
+    #particles-js{
         
         width: 100%;
         background: rgb(10, 0, 15);
     }
-    .first-section .logo img {
+    #particles-js .logo img {
+        margin-top: -10rem;
         width: auto;
         scale: 0.17; 
+        margin-bottom: -7%;
+        transform: translate(-29%, -100%);
     }
     .slogan h4{
         font-size: 0.9rem;
@@ -645,4 +611,3 @@ width: 90vh;
 
 }
 } */
-
