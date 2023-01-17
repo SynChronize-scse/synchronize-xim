@@ -532,17 +532,21 @@ video {
         width: 100%;
         background: rgb(10, 0, 15);
     }
+    nav{
+        top: 0;
+    }
     #particles-js {
         margin-top: 100px;
         height: 80vh;
         width: 100vw;
     }
-    .first-section .logo img {
+    .logo img {
         width: auto;
-        scale: 0.17; 
+        scale: 1.9; 
     }
     .slogan h4{
         font-size: 0.9rem;
+        width: 200px;
     }
     .dates h3{
         font-size: 1.5rem;
