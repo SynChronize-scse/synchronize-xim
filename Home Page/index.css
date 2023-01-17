@@ -520,6 +520,9 @@ video {
         margin: 0;
        
     }
+    nav{
+        top: 0;
+    }
     body {
         width: 100%;
         min-height: 100vh;
@@ -539,10 +542,11 @@ video {
     }
     .first-section .logo img {
         width: auto;
-        scale: 0.17; 
+        scale: 1.1; 
     }
     .slogan h4{
         font-size: 0.9rem;
+        width: 350px;
     }
     .dates h3{
         font-size: 1.5rem;
