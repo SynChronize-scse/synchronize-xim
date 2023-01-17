@@ -10,14 +10,19 @@ html {
   font-size: 62.5%;
 }
 
-#particles-js {
+.main-sec {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.899)), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   position: relative;
+}
+
+#particles-js {
+  height: 100vh;
+  width: 100vw;
 }
 
 main {
@@ -78,21 +83,3 @@ a:hover {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  html{
-    padding: 0;
-    margin: 0;
-  }
-  .main-head h2{
-    font-size: 25px;
-  }
-  .main-head .syncro-cont img {
-    width: 46vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  #particles-js{
-    position: unset;
-  }
-}
