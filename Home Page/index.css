@@ -540,13 +540,13 @@ video {
         height: 80vh;
         width: 100vw;
     }
-    .logo img {
+    .first-section .logo img {
         width: auto;
-        scale: 1.9; 
+        scale: 1.2; 
     }
     .slogan h4{
         font-size: 0.9rem;
-        width: 200px;
+        width: 20rem;
     }
     .dates h3{
         font-size: 1.5rem;
