@@ -36,7 +36,7 @@ text {
     stroke-width: 2px;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    fill: rgba(45, 2, 32, 0.845);
+    fill: rgba(13, 2, 30, 0.845);
     animation: dash 5s ease-out alternate infinite;
 }
 
