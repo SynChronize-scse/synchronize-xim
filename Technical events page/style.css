@@ -994,20 +994,22 @@ section.footer{
 
 
 button {
-    margin-top: 50px;
-    background-color: rgba(255,255,255,0.3);
-    border: 3px solid #F04A49;
-    color: #F04A49;
-    font-size: 25px;
-    padding: 10px 20px;
+  cursor: pointer;
+  background-image: linear-gradient(190deg, #f83600 0%, #fee140 100%);
+  color: #fff;
+  width: 180px;
+  text-align: center;
+  font-size:16px;
+  padding: 10px 0;
+  margin: 0 auto;
+  transition:background-image 3s ease-in-out;
+  margin-bottom: 30px;
     
 }
 
 button:hover {
-    background-color: #F04A49;
-    color: #FFF;
-    border: 3px solid #F04A49;
-    transition: all 0.3s ease 0s;
+  transition:background-image 3s ease-in-out;
+  background-image: linear-gradient(90deg, #fee140 0%, #f83600 100%);
 }
 
 
@@ -1054,23 +1056,6 @@ button:hover {
 
 
 
-button {
-    margin-top: 10px;
-    background-color: rgba(255,255,255,0.3);
-    border: 3px solid #F04A49;
-    color: #F04A49;
-    font-size: 25px;
-    padding: 5px 10px;
-    margin-bottom: 30px;
-    
-}
-
-button:hover {
-    background-color: #F04A49;
-    color: #FFF;
-    border: 3px solid #F04A49;
-    transition: all 0.3s ease 0s;
-}
 
 p {
 	margin: 1em 0;
