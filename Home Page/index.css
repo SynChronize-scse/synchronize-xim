@@ -555,38 +555,8 @@ video {
         border-radius: 20px;
 
     }
-    #about h2 {
-        color: #fff;
-        transform: translateY(100vh);
-        padding-left: 2rem;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
-        letter-spacing: 0.15rem;
-        padding-top: 90px;
 
-
-    }
 /* test */
-    #about .content {
-        color: #fff;
-    transform: translateY(102vh);
-    padding-left: 2rem;
-    float: left;
-    /* padding-right: 45rem; */
-    font-size: 15px;
-    line-height: 2rem;
-    font-family: 'Poppins', sans-serif;
-   
-    padding-right: 0;
-    width: 48vh;
-    
-    }
-
-    .footer {
-        padding: 40px 0;
-        background-color: rgb(15, 12, 12);
-        transform: translateY(57rem);
-    }
 
     .card {
         background: #1d1d1d;
