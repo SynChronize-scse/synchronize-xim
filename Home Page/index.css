@@ -123,10 +123,7 @@ nav{
     background-size: cover;
 
 }
-#particles-js {
-    height: 80vh;
-    width: 100vw;
-}
+
 .hero-cont {
     display: flex;
     justify-content: center;
@@ -533,6 +530,10 @@ Hari@10!
         min-height: 80vh;
         width: 100%;
         background: rgb(10, 0, 15);
+    }
+    #particles-js {
+        height: 80vh;
+        width: 100vw;
     }
     .first-section .logo img {
         width: auto;
