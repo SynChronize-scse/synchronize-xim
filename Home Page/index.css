@@ -123,6 +123,7 @@ nav{
     background-size: cover;
 
 }
+
 .hero-cont {
     display: flex;
     justify-content: center;
@@ -530,6 +531,11 @@ video {
         min-height: 80vh;
         width: 100%;
         background: rgb(10, 0, 15);
+    }
+    #particles-js {
+        margin-top: 100px;
+        height: 80vh;
+        width: 100vw;
     }
     .first-section .logo img {
         width: auto;
