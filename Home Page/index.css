@@ -246,7 +246,7 @@ video {
 
 
 
-Hari@10!
+
 
 .planned-events {
     min-height: 70vh;
@@ -536,8 +536,8 @@ Hari@10!
         width: 100vw;
     }
     .first-section .logo img {
-        width: auto;
-        scale: 0.17; 
+        width: 100%;
+        scale: 2; 
     }
     .slogan h4{
         font-size: 0.9rem;
