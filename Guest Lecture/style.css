@@ -1,83 +1,417 @@
-*{
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
+    overflow-x: hidden;
 }
+
+html {
+    font-family: Helvetica, Arial;
+    background-color: rgb(10, 0, 15);
+}
+
+    
 
 .body1 {
-    background: #121314;
-    overflow: hidden;
-    height: 60vh;
-    background-image: url(/body1.png);
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.679)), url('https://i.postimg.cc/fbkh2BmV/guest-top.jpg');
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    opacity: 1;
 }
 
-h1 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 100px;
-    line-height: 400px;
-    margin-left: -10px;
-    color: transparent;
-    -webkit-text-stroke: 2px rgb(234, 17, 17);
-    background: url(https://cdn.discordapp.com/attachments/517429247330091055/916787724374118420/unknown.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes back {
-    100% {
-        background-position: 2000px 0;
+text {
+    font-size: 8rem;
+    stroke: rgb(77, 32, 255);
+    stroke-width: 2px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    fill: rgba(45, 2, 32, 0.845);
+    animation: dash 5s ease-out alternate infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
     }
 }
 
 
 
 
-/* --------------------------------------------------- */
+/* ----------------------------------------------- */
+
+
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Rubik", sans-serif;
+    --font-serif: "Cardo", serif;
+}
 
 
 .body2 {
+    display: grid;
+    place-items: center;
+    background-color: rgb(10, 0, 15);
     width: 100%;
-    height: 100%;
-    font-family: "Open Sans", "open-sans", sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
-    color: white;
-    margin-bottom: 70vh;
 }
 
-.container {
-    width: 1090px;
-    min-width: 500px;
-    height: 100px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.page-content {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: var(--font-sans);
 }
 
-.container .card {
-    width: 330px;
-    height: 430px;
-    float: left;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px white;
-    overflow: hidden;
+@media (min-width: 600px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .page-content {
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
+
+.card {
     position: relative;
-    top: 0;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 113%;
     text-align: center;
-    transition: all 0.25s;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+    .card {
+        height: 350px;
+    }
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -17px;
+    width: 110%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+
+.card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 210%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.card:nth-child(1):before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.679)),url('https://i.postimg.cc/J4jGr4y1/Bodhisattwa-Sanghapriya.jpg');
+  }
+  .card:nth-child(2):before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.679)),url('https://i.postimg.cc/nz51qYtb/arsh-goyal.png');
+  }
+  .card:nth-child(3):before {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.344), rgba(0, 0, 0, 0.679)), url('https://i.postimg.cc/zfYvHyQt/Anurag-Kirti.png');
+    }
+ 
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.content>*+* {
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+    border: 2px solid #fff ;
+}
+
+.btn:hover {
+    background-color: #fff  ;
+    color: #0d0d0d;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+    .card:after {
+        transform: translateY(0);
+    }
+
+    .content {
+        transform: translateY(calc(100% - 4.5rem));
+    }
+
+    .content>*:not(.title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .card:hover,
+    .card:focus-within {
+        align-items: center;
+    }
+
+    .card:hover:before,
+    .card:focus-within:before {
+        transform: translateY(-4%);
+    }
+
+    .card:hover:after,
+    .card:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .card:hover .content,
+    .card:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .card:hover .content>*:not(.title),
+    .card:focus-within .content>*:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+    }
+
+    .card:focus-within:before,
+    .card:focus-within:after,
+    .card:focus-within .content,
+    .card:focus-within .content>*:not(.title) {
+        transition-duration: 0s;
+    }
 }
 
 
-.container .card:nth-child(2) {
-    margin: 0 50px;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .card{
+        height: 25rem;
+        width: 21rem;
+        transform: translateY(1rem);
+      }
+      text {
+        font-size: 4rem;
+        stroke:rgb(77, 32, 255);
+        stroke-width: 2px;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        fill: rgba(45, 2, 32, 0.845);;
+        animation: dash 5s ease-out alternate infinite;
+        transform: translateX(25rem);
+    }
 }
 
-.container .card:hover {
-    top: -15px;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 400;
+    list-style-type: none;
+    font-style: normal;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  nav {
+    line-height: 1.4;
+    font-family: "Space Mono", monospace;
+    background: #1d1f20;
+    padding: 25px 35px;
+    width: 300px;
+    top: calc(50vh - 247px);
+    left: calc(50vw - 150px);
+    position: fixed;
+    border-radius: 16px;
+    box-shadow: 0 0 60px -15px black;
+    transform: scale(0) rotate(360deg);
+    transition: all 0.75s;
+    font-size: 18px;
+    z-index: 999;
+  }
+  
+  nav.menu_active {
+    transform: scale(1) rotate(0deg);
+    z-index: 999;
+  }
+  
+  nav > ol > li {
+    margin: 20px 0;
+    color: #b5bc67;
+  }
+  
+  nav > ol > li:first-of-type {
+    color: #efc371;
+  }
+  
+  nav > ol > li > ol {
+    margin: 10px 0 0 20px;
+    border-left: 1px solid #4d4d4c;
+    color: #ae94c0;
+  }
+  
+  nav > ol > li > ol > li {
+    margin: 7px 0;
+    padding-left: 20px;
+  }
+  
+  nav a:hover {
+    color: #dd925f;
+  }
+  
+  h3 {
+    position: fixed;
+    font-family: "Roboto Mono", monospace;
+    font-size: 30px;
+    color: #cfd8dc;
+    top: 30px;
+    left: 90%;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 999;
+  }
+  
+  .menu h3:hover {
+    border-bottom: 6px dotted #cfd8dc;
+    padding-bottom: 10px;
+    top: 20px;
+  }
+  
+  p {
+    font-family: "Roboto Mono", monospace;
+    float: right;
+    cursor: pointer;
+    font-size: 16px;
+    color: #cfd8dc;
+    transition: all 0.2s;
+  }
+  .button1 {
+    color: white;
+    background-color: #2d7eff;
+    border: 5px solid transparent;
+    transition: 0.2s ease;
+    border-radius: 50px;
+  }
+  .button1:hover {
+    color: #2d7eff;
+    background-color: white;
+    transform: scale(1.1);
+    border: 5px solid #2d7eff;
+  }
+  .button1:active {
+    box-shadow: 0px 7px 0px 0px #258cd1;
+  }
+
+  .menu p:hover {
+    border-bottom: 2px dotted #cfd8dc;
+    padding-bottom: 5px;
+  }
+  
+  @media (max-width: 1194px) {
+    h3 {
+      top: 20px;
+      left: 80%;
+      font-size: 1.4rem;
+    }
+    .PosterButton{
+      top: 70%;
+      border-radius: 50px;
+      left: 30%;
+    }
+  }
+  @media (max-width: 600px) {
+    h3 {
+      top: 20px;
+      left: 70%;
+      font-size: 1.4rem;
+    }
+    .navlogo img{
+      top:10%;
+      width: 85%;
+      text-align: center;
+    }
+  
+  }
+/* ------------------------------ */
+
