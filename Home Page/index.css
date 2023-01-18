@@ -346,7 +346,7 @@ video {
 }
 
 .sponsors-container {
-    color: rgb(0, 0, 0);
+    color: #000
     position: relative;
     margin-top: 5%;
     padding-left: 3rem;
@@ -357,6 +357,71 @@ video {
     height: 20rem;
     text-transform: uppercase;
 }
+
+.sponcard-container {
+    color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.sponcard {
+    background: #1d1d1d;
+    width: 230px;
+    height: 175px;
+    transform: translateY(-3.5rem);
+    margin: 40px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.sponcard h2 {
+    transform: translateY(8em);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.sponcard p {
+    transform: translateY(12em);
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    font-size: 15px;
+
+}
+
+.sponcard-image {
+    height: 175px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.sponcar-1 {
+    background-image: url('https://i.ibb.co/P5qYhgG/mcl-logo.png');
+}
+
+.sponcar-2 {
+    background-image: url('https://i.ibb.co/txkPwdb/IMFA-LOGO.jpg');
+}
+
+.sponcar-3 {
+    background-image: url('https://i.ibb.co/ypDQJmq/UTNT-logo.png');
+}
+
+.sponcar-4 {
+    background-image: url('https://i.ibb.co/tQ1T6pc/bc-bhuyan-logo.png');
+}
+
+
+/* .sponcard:hover {
+    background-color: bisque;
+    color: #000;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.2s ease;
+} */
+
+
 
 .footer {
     padding: 40px 0;
@@ -559,6 +624,18 @@ video {
         border-radius: 20px;
 
     }
+.sponsors-container{
+    
+    min-height: 35em;
+    background-color: inherit;
+    color: #fff;
+}
+.sponcard-container{
+    padding: 0;
+}
+.sponcard{
+    transform: translate(-15px,20px);
+}
 
 /* test */
 
@@ -571,6 +648,7 @@ video {
         border-radius: 15px;
     }
 }
+
 
 /* @media only screen and (min-device-width:490px) and (max-device-width: 1024px){
     
