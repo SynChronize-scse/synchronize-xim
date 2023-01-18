@@ -1017,14 +1017,14 @@ button:hover {
 
 
 
-.popupk {
+.popup {
   display: none;
   position: fixed;
   padding: 10px;
   width: 280px;
   left: 50%;
   margin-left: -150px;
-  height: 180px;
+  height: fit-content;
   top: 50%;
   margin-top: -100px;
   background: #FFF;
@@ -1032,7 +1032,7 @@ button:hover {
   z-index: 20;
 }
 
-#popupk:after {
+#popup:after {
   position: fixed;
   content: "";
   top: 0;
@@ -1043,7 +1043,7 @@ button:hover {
   z-index: -2;
 }
 
-#popupk:before {
+#popup:before {
   position: absolute;
   content: "";
   top: 0;

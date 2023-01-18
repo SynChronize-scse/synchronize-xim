@@ -2,6 +2,10 @@
 body {
     background: rgb(10, 0, 15);;
     font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .logo-cont{
     transform: translateX(27%);
@@ -18,7 +22,7 @@ body {
   }
   marquee {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 380px;
@@ -48,7 +52,7 @@ body {
       overflow: hidden;
     }
     .logo-cont{
-      width: 90vh;
+      width: 80vh;
       transform: translateX(3.5vh);
       margin-top: 50px;
     }
