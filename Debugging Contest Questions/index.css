@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-weight: 400;
+    list-style-type: none;
+    font-style: normal;
+  }
+  
+body {
+    background-color: rgb(10, 0, 15);
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+/* section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 90vh;
+   
+    background-size: cover;
+} */
+
+.first-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/BZzVwTWd/6.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+
+}
+
+.hero-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   line-height: 3rem;
+}
+.logo {
+    max-width: 90%;
+    z-index: -120;
+}
+#particles-js .logo img {
+    width: 100%;
+    /* margin-left: 26%; */
+    /* -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0, 0, 0, 0.205)); */
+}
+
+.question_number h3 {
+    color: beige;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.12em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+    font-size: 30px;
+}
+
+.question_clue form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.question_clue label {
+    font-family: 'Poppins';
+    letter-spacing: 0.10em;
+    line-height: normal;
+    color: beige;
+    margin-bottom: 10px;
+}
+
+.question_clue #encrypt_input {
+    font-family: 'Poppins';
+    line-height: normal;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.question_clue button {
+    width: 6rem;
+    height: 3rem;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+    border-width: 3px;
+    border-color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins';
+    border-radius: 20px;
+    z-index: 1;
+    margin: 5px;
+}
+
+.question_clue h4 {
+    color: beige;
+    font-family: 'Poppins';
+    letter-spacing: 0.10em;
+    line-height: normal;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.question_clue h5 {
+    color: beige;
+    font-family: 'Poppins';
+    letter-spacing: 0.10em;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.regbtn button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    border-width: 3px;
+    border-color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins';
+    border-radius: 20px;
+    z-index: 1;
+    margin-top: 2rem;
+
+}
+
+.regbtn button:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+    border-color: #000;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: rgb(15, 12, 12);
+    margin-top: auto;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(233, 232, 232);
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    font-family: 'Poppins';
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    transition: all 0.9s;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: bisque;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    html{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0; 
+    }
+    body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .first-section {
+        min-height: 80vh;
+        width: 100%;
+        background: rgb(10, 0, 15);
+    }
+    #particles-js {
+        height: 80vh;
+        width: 100vw;
+    }
+    .first-section .logo img {
+        width: 100%;
+        scale: 2; 
+    }
+    .question_clue h4{
+        font-size: 0.9rem;
+    }
+    .question_number h3{
+        font-size: 1.5rem;
+    }
+    .regbtn button {
+        transform: none;
+        width: 9rem;
+        height: 3rem;
+        font-size: 14px;
+        background-color: transparent;
+        color: #fff;
+        border-width: 2.2px;
+        border-color: #fff;
+        cursor: pointer;
+        font-family: 'Poppins';
+        border-radius: 20px;
+    }
+}
