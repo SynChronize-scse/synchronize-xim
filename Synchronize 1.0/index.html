@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Synchronize 1.0</title>
+
+</head>
+<body>
+    
+    <main class="relative flex flex-col justify-center bg-slate-900 overflow-hidden" style="min-height: 600px;">
+      <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+  
+          <div class="text-center">
+
+              
+              <div class="absolute top-0 left-0 rotate-180 -translate-x-3/4 -scale-x-100 blur-3xl opacity-70 pointer-events-none" aria-hidden="true">
+                  <img src="./shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
+              </div>
+              
+              
+              <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 blur-3xl opacity-70 pointer-events-none" aria-hidden="true">
+                  <img src="./shape.svg" class="max-w-none" width="852" height="582" alt="Illustration" />
+              </div>
+
+             
+              <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+                  <canvas data-particle-animation></canvas>
+              </div>
+          
+              <div class="relative">
+                  <h1 class="inline-flex font-extrabold text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4" style="font-size: 70px;">SYNCHRONIZE 1.0</h1>
+                  <div class="max-w-3xl mx-auto mb-8">
+                      <p class="text-lg text-slate-400">SynChronize is the university's first ever technical fest with a multitude of events planned over a span of three days, wherein students from our university (as well as from other institutes) may take part in events like coding contests, technical workshops, guest lectures, and more.</p>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </main>
+  <script src="./script.js"></script>
+
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <div class="timeline__wrapper">
+                <div class="timeline__progressbar"></div>
+                <div class="timeline__block">
+                    <div class="timeline__block__bullet-point">
+                        <span class="timeline__block__circle"></span>
+                    </div>
+                    <div class="timeline__block__head">
+                        <h1 class="timeline__block__title">Day 1</h1>
+                    </div>
+                    <div class="timeline__block__body">
+                        <div class="card">
+                            <div class="img" >
+                              <img src="https://i.ibb.co/q5p3w00/IMG-9004.jpg" style="border-radius: 10%;min-height:75px;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Start-up Park</h2>
+                              </div>
+                              <p class="text">
+                                There were two filled stalls for the start-up park this year, occupied by IG Drones and SMPS electric. UTNT had reserved a stall but had to cancel at the last minute due to unforeseeable circumstances.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/sXtXj9vS/TQ.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Tech-Quiz</h2>
+                              </div>
+                              <p class="text">
+                                It's a technical quiz contest consisting of 3 rounds. Where the participants forms a group of 3 and when the question is displayed on the screen, the one who presses the buzzer firstly will be allowed to answer at first. the team who have scored more marks will be the winner.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.ibb.co/sR50qJp/give-me-a-single-squared-shape-poster-on-a-logo-designing-content-names-logo-istics-352062815.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>LOGO-istics</h2>
+                              </div>
+                              <p class="text">
+                                LOGO is an esoteric programming language. It can be used to generate patterns, and the objective of this event was for participants to showcase their creativity by making patterns using LOGO.
+
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Photobooth</h2>
+                              </div>
+                              <p class="text">
+                                A photobooth was set up and decorated according to a tech fest. There were also nerdy props to make use of. We charged people to get Polaroid printouts of the photos.
+
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.ibb.co/02nZ9qj/Day-1-Google-Drive.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Escape the Maze</h2>
+                              </div>
+                              <p class="text">
+                                A maze was built in the football ground. Participants had to enter the maze and find their way out of it. Volunteers at various checkpoints within the maze were stationed to ask questions in exchange for hints to get out of the maze.
+We charged an amount of Rs. 50 for entering the maze.
+
+                              </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="timeline__block">
+                    <div class="timeline__block__bullet-point">
+                        <span class="timeline__block__circle"></span>
+                    </div>
+                    <div class="timeline__block__head">
+                        <h1 class="timeline__block__title">Day 2</h1>
+                    </div>
+                    <div class="timeline__block__body">
+                        <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="timeline__block">
+                    <div class="timeline__block__bullet-point">
+                        <span class="timeline__block__circle"></span>
+                    </div>
+                    <div class="timeline__block__head">
+                        <h1 class="timeline__block__title">Day 3</h1>
+                    </div>
+                    <div class="timeline__block__body">
+                        <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="img" >
+                              <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;">
+                            </div>
+                            <div class="infos">
+                              <div class="name">
+                                <h2>Beta-bytes</h2>
+                              </div>
+                              <p class="text">
+                                Debugging contest. Participants had to go through 8 levels of questions, and the top three based on completion time were awarded prizes.
+                              </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+                <div class="timeline__hider"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+</body>
+</html>
