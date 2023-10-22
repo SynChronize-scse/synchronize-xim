@@ -57,6 +57,256 @@ h2 {
   margin-right: auto;
 }
 
+/* navbar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  min-height: 50px;
+}
+
+.header::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+.header::after {
+  content: "";
+  top: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.8s;
+}
+
+.header:hover::after {
+  left: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-item {
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none;
+  margin-left: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover {
+  color: skyblue;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  #check:checked ~ .navbar {
+    height: 20.7rem;
+  }
+
+  .nav-item {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.15s * var(--i));
+  }
+}
+
+
+/* Image Slideshow */
+#wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+
+#spacer {
+  height: 10%;
+  width: 100%;
+}
+
+#slides {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 350px;
+  background-color: #e0e0e0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  transition: transform 0.8s, opacity 0.8s;
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform, opacity;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+.slide::before {
+  content: "•••";
+  color: #999;
+  font-size: 40px;
+  line-height: 30px;
+  padding-left: 8px;
+  letter-spacing: 2px;
+  display: block;
+  height: 30px;
+  background: linear-gradient(#ddd, #ccc);
+  background-clip: padding-box;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.slide img {
+  width: 500px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide-left {
+  transform: translateX(-320px) perspective(1000px) rotateY(45deg) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.slide-center {
+  opacity: 1;
+  z-index: 4;
+}
+
+.slide-right {
+  transform: translateX(320px) perspective(1000px) rotateY(-45deg) scale(0.8);
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.sliding-right .slide-left {
+  z-index: 3;
+}
+.sliding-right .slide-right {
+  z-index: 3;
+}
+
+.btn {
+  font-size: 50px;
+  color: #dfe0e7;
+  position: absolute;
+  top: 50%;
+  margin-top: -27px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+#btn-left {
+  left: 25px;
+  z-index: 5;
+}
+
+#btn-right {
+  right: 25px;
+}
+
 /* Primary Button Style */
 .primary-btn {
   display: inline-block;

@@ -271,12 +271,16 @@ video {
 
 .planned-events {
     min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .planned-events h3 {
     color: #fff;
-    padding-left: 3rem;
-    font-family: 'Poppins', sans-serif;
+    /* padding-left: 3rem; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     --min: 2.2rem;
     /* minimum value */
     --val: 5vw;
@@ -287,11 +291,23 @@ video {
     letter-spacing: 0.15rem;
 }
 
+@media screen and (max-width: 875px) {
+    .planned-events h3 {
+        --min: 1.5rem;
+        /* minimum value */
+        --val: 5vw;
+        /* preferred value = 4% viewport width */
+        --max: 2.4rem;
+        font-size: clamp(var(--min), var(--val), var(--max));
+    }
+}
+
 .card-container {
     color: rgb(253, 253, 253);
     display: flex;
     justify-content: center;
     padding: 10rem;
+    padding-top: 5rem;
     flex-wrap: wrap;
     gap: 4rem;
 }
@@ -514,7 +530,7 @@ video {
 }
 
 .car-1 {
-    background-image: url('https://i.ibb.co/Zx24HVJ/technical-event.jpg');
+    background-image: url('https://i.kinja-img.com/image/upload/c_fill,f_auto,g_center,h_900,q_60,w_1600/5e235a2394ec14fa0aca79d7f45a6a3a.jpg');
 }
 
 .car-2 {
@@ -522,19 +538,19 @@ video {
 }
 
 .car-3 {
-    background-image: url('https://i.ibb.co/hDqd5Mt/cultural-event.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiY2A36V-ALjGZ0WIWgZWmWPIfHN0-_Qmc98W4oBlSD0-TmBL7BQ5AI2b6LUOqCZLL79Q&usqp=CAU');
 }
 
 .car-4 {
-    background-image: url('https://i.ibb.co/SQFNXyG/workshops.jpg');
+    background-image: url('https://www.citedudesign.com/articles/1991/thumb_61af56af350cd.jpg');
 }
 
 .car-5 {
-    background-image: url('https://i.ibb.co/NpsXL14/exhibition.jpg');
+    background-image: url('https://fundacja-arteria.org/wp-content/uploads/2021/08/obraz_2021-08-14_152940.png');
 }
 
 .car-6 {
-    background-image: url('https://i.ibb.co/GR8pP7X/guest-lecture.jpg');
+    background-image: url('https://c.ndtvimg.com/2023-08/q6ee14jo_influencers_625x300_21_August_23.jpg?downsize=420:*');
 }
 
 /* 

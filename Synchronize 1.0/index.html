@@ -5,9 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Technical events page/style.css" />
+  <!-- <link rel="stylesheet" href="/Technical events page/style.scss" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,1,0" />
+  <link rel="icon" href="../Home Page/synclogo.png" type="image/png">
+  <link rel="stylesheet" href="../master.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -28,6 +38,23 @@
 </head>
 
 <body>
+  <header class="header">
+    <a href="#" class="logo">SYNCHRONIZE 1.0</a>
+
+    <input type="checkbox" id="check" />
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+
+    <div class="navbar">
+      <a href="../Home Page/index.html" class="nav-item" style="--i: 0">Synchronize 2.0</a>
+      <a href="#gallery" class="nav-item" style="--i: 1">Gallery</a>
+      <a href="#events" class="nav-item" style="--i: 2">Events</a>
+      <a href="#contact" class="nav-item" style="--i: 3">Connect with us</a>
+    </div>
+</header>
+
 
   <main class="relative flex flex-col justify-center bg-slate-900 overflow-hidden" style="min-height: 600px;">
     <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
@@ -54,13 +81,13 @@
 
         <div class="relative">
           <h1
-            class="inline-flex font-extrabold text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4"
-            style="font-size: 70px;">SYNCHRONIZE 1.0</h1>
+            class="inline-flex font-extrabold text-8xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4"
+            >SYNCHRONIZE 1.0</h1>
           <div class="max-w-3xl mx-auto mb-8">
-            <p class="text-lg text-slate-400">SynChronize is the university's first ever technical fest with a multitude
+            <!-- <p class="text-lg text-slate-400">SynChronize is the university's first ever technical fest with a multitude
               of events planned over a span of three days, wherein students from our university (as well as from other
               institutes) may take part in events like coding contests, technical workshops, guest lectures, and more.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -68,10 +95,121 @@
     </div>
   </main>
   <script src="./script.js"></script>
-
+  
+  <section id="gallery">
+  <div id="wrap">
+    <div id="spacer"></div><a class="btn" id="btn-left"><i class="fa fa-chevron-left"></i></a>
+    <div id="slides">
+      <div class="slide slide-left"><img src="https://i.postimg.cc/HxbSx28k/IMG-0303.jpg" alt=""/></div>
+      <div class="slide slide-left"><img src="https://i.postimg.cc/5NDF7MkD/IMG-9733.jpg" alt=""/></div>
+      <div class="slide slide-left"><img src="https://i.postimg.cc/63hdg1Gn/IMG-9046.jpg" alt=""/></div>
+      <div class="slide slide-left"><img src="https://i.postimg.cc/Wb1nLj83/IMG-0315.jpg" alt=""/></div>
+      <div class="slide slide-left"><img src="https://i.postimg.cc/XYZkq8T6/IMG-0316.jpg" alt=""/></div>
+      <div class="slide slide-center"><img src="https://i.postimg.cc/XYhxkhwv/IMG-0358.jpg" alt=""/></div>
+      <div class="slide slide-center"><img src="https://i.postimg.cc/cCb8Nq1g/IMG-9127.jpg" alt=""/></div>
+      <div class="slide slide-center"><img src="https://i.postimg.cc/ryn444GV/IMG-9391.jpg
+        " alt=""/></div>
+      <div class="slide slide-center"><img src="https://i.postimg.cc/hj8rgtNJ/IMG-0554.jpg" alt=""/></div>
+      <div class="slide slide-center"><img src="https://i.postimg.cc/Gh4yxpzk/IMG-9369.jpg" alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/qBLL5g8S/IMG-0628.jpg" alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/qMDGpYDG/IMG-0787.jpg" alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/k5bs1ccv/IMG-0625.jpg" alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/Wz274PP5/IMG-8910.jpg" alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/prGKXhCd/IMG-8937.jpg" alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/TwqMHSvr/IMG-0444.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/Fs6qGmkM/IMG-0660.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/MpRsDBSB/IMG-0754.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/5ND7L3Z1/IMG-0799.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/X7qmwXqK/IMG-8835.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/rpXHXJJg/IMG-8878.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/pLnS67Dp/IMG-8975.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/5yRPPqyB/IMG-9124.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/XqJHcDjN/IMG-9162.jpg
+        " alt=""/></div>
+      <div class="slide slide-right"><img src="https://i.postimg.cc/5NXKXGKn/IMG-9194.jpg
+        " alt=""/></div>
+    </div><a class="btn" id="btn-right"><i class="fa fa-chevron-right"></i></a>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    (function($) {
+  
+      //TODO : make the peripheral slides click-able
+      
+      var $slides = $('.slide'),
+          max = $slides.length - 1,
+          center = 1,
+          classNames = '',
+          animating = false;
+      
+      $('#wrap').on('click', function(e) {
+        // Wait for the animation to finish so we dont get a weird warped animation
+        if (animating) return;
+        
+        // Was a btn clicked?
+        if (e.target.parentNode.className === 'btn') {
+          animating = true;
+          
+          // Update center position depending on which button was pressed
+          switch (e.target.parentNode.id) {
+            case 'btn-left':
+              center = rotate(center - 1, max);
+              $slides.parent().attr('class', 'sliding-left');
+              break;
+            case 'btn-right':
+              center = rotate(center + 1, max);
+              $slides.parent().attr('class', 'sliding-right');
+              break;
+          }
+          
+          // Update each slides class names
+          $slides.each(function(i) {
+            classNames = 'slide';
+            switch (i) {
+              case rotate(center - 1, max):
+                classNames += ' slide-left';
+                break;
+              case rotate(center, max):
+                classNames += ' slide-center';
+                break;
+              case rotate(center + 1, max):
+                classNames += ' slide-right';
+                break;
+            }
+            this.className = classNames;
+          })
+          // Toggle off class once the animation is complete
+          .on('transitionend', function() {
+            animating = false;
+          });
+        }
+      });
+      
+      
+      
+      /**
+       * Returns the rotated index within a range
+       */
+      function rotate(i, max) {
+        if (i < 0) return max;
+        if (i > max) return 0;
+        return i;
+      }
+      
+    }(jQuery));
+  </script>
   <!-- Timeline Section -->
   <section class="timeline">
-    <div class="container">
+    <div class="container" id="events">
       <div class="timeline__wrapper">
         <div class="timeline__progressbar"></div>
 
@@ -92,12 +230,17 @@
                   <h2>Start-up Park</h2>
                 </div>
                 <p class="text">
-                  There were two filled stalls for the start-up park this year, occupied by IG Drones and SMPS electric.
-                  UTNT had reserved a stall but had to cancel at the last minute due to unforeseeable circumstances.
+                  There were two filled stalls for the start-up park this
+                  year, occupied by IG Drones and SMPS electric. UTNT had
+                  reserved a stall but had to cancel at the last minute due to
+                  unforeseeable circumstances.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.ibb.co/q5p3w00/IMG-9004.jpg" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://i.ibb.co/q5p3w00/IMG-9004.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -119,13 +262,18 @@
                   <h2>Tech-Quiz</h2>
                 </div>
                 <p class="text">
-                  It's a technical quiz contest consisting of 3 rounds. Where the participants forms a group of 3 and
-                  when the question is displayed on the screen, the one who presses the buzzer firstly will be allowed
-                  to answer at first. the team who have scored more marks will be the winner.
+                  It's a technical quiz contest consisting of 3 rounds. Where
+                  the participants forms a group of 3 and when the question is
+                  displayed on the screen, the one who presses the buzzer
+                  firstly will be allowed to answer at first. the team who
+                  have scored more marks will be the winner.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/sXtXj9vS/TQ.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://i.postimg.cc/sXtXj9vS/TQ.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -147,12 +295,16 @@
                   <h2>Beta-bytes</h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  Debugging contest. Participants had to go through 8 levels
+                  of questions, and the top three based on completion time
+                  were awarded prizes.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://i.postimg.cc/W1nhGkHL/DC.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -174,14 +326,17 @@
                   <h2>LOGO-istics</h2>
                 </div>
                 <p class="text">
-                  LOGO is an esoteric programming language. It can be used to generate patterns, and the objective of
-                  this event was for participants to showcase their creativity by making patterns using LOGO.
+                  LOGO is an esoteric programming language. It can be used to
+                  generate patterns, and the objective of this event was for
+                  participants to showcase their creativity by making patterns
+                  using LOGO.
                 </p>
               </div>
               <div class="img">
                 <img
                   src="https://i.ibb.co/sR50qJp/give-me-a-single-squared-shape-poster-on-a-logo-designing-content-names-logo-istics-352062815.png"
-                  style="border-radius: 10%;min-height:75px;">
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -203,12 +358,16 @@
                   <h2>Photobooth</h2>
                 </div>
                 <p class="text">
-                  A photobooth was set up and decorated according to a tech fest. There were also nerdy props to make
-                  use of. We charged people to get Polaroid printouts of the photos.
+                  A photobooth was set up and decorated according to a tech
+                  fest. There were also nerdy props to make use of. We charged
+                  people to get Polaroid printouts of the photos.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://static.toiimg.com/thumb/msid-70532853,width-400,resizemode-4/70532853.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -230,14 +389,18 @@
                   <h2>Escape the Maze</h2>
                 </div>
                 <p class="text">
-                  A maze was built in the football ground. Participants had to enter the maze and find their way out of
-                  it. Volunteers at various checkpoints within the maze were stationed to ask questions in exchange for
-                  hints to get out of the maze.
-                  We charged an amount of Rs. 50 for entering the maze.
+                  A maze was built in the football ground. Participants had to
+                  enter the maze and find their way out of it. Volunteers at
+                  various checkpoints within the maze were stationed to ask
+                  questions in exchange for hints to get out of the maze. We
+                  charged an amount of Rs. 50 for entering the maze.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.ibb.co/02nZ9qj/Day-1-Google-Drive.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://i.ibb.co/02nZ9qj/Day-1-Google-Drive.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -249,7 +412,7 @@
             <span class="timeline__block__circle"></span>
           </div>
           <div class="timeline__block__head">
-            <h1 class="timeline__block__title">Beta-bytes</h1>
+            <h1 class="timeline__block__title">TimeHacks</h1>
             <br />
             <span>Day 2</span>
           </div>
@@ -257,15 +420,21 @@
             <div class="card">
               <div class="infos">
                 <div class="name">
-                  <h2>Beta-bytes</h2>
+                  <h2>TimeHacks</h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  A regular coding contest. Participants were given one and
+                  half hours to pass all test cases and submit their code. The
+                  participant who submit the code within less time and solved
+                  more correct questions as comparing to other participants,
+                  he/she is declared as winner
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://tsge.edu.in/wp-content/uploads/2023/07/Blog_1680690223.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -276,7 +445,7 @@
             <span class="timeline__block__circle"></span>
           </div>
           <div class="timeline__block__head">
-            <h1 class="timeline__block__title">Beta-bytes</h1>
+            <h1 class="timeline__block__title">Drone Flight by IG drones</h1>
             <br />
             <span>Day 2</span>
           </div>
@@ -284,15 +453,20 @@
             <div class="card">
               <div class="infos">
                 <div class="name">
-                  <h2>Beta-bytes</h2>
+                  <h2>Drone Flight by IG drones</h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  There were some trainees from IG drones who were teaching
+                  how to flew the drones and the students standing near to it
+                  got chance to flew and witnessing the experience. There are
+                  some recorded footage of the campus.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://igdrones.com/assets/img/svg/whiteicon/Centre%20of%20Excellence.webp"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -303,7 +477,7 @@
             <span class="timeline__block__circle"></span>
           </div>
           <div class="timeline__block__head">
-            <h1 class="timeline__block__title">Beta-bytes</h1>
+            <h1 class="timeline__block__title">Zeno’s Terminus</h1>
             <br />
             <span>Day 2</span>
           </div>
@@ -311,15 +485,137 @@
             <div class="card">
               <div class="infos">
                 <div class="name">
-                  <h2>Beta-bytes</h2>
+                  <h2>Zeno’s Terminus</h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  A robotics obstacle course contest. This was organized by
+                  RobogeniX, the robotics club of SCSE. The participants were
+                  asked to follow some rules, in which they were asked to pass
+                  the pathways without touching the pylons. The participant
+                  who can do it, he/she declared as winner. It's a fun event
+                  for technical and non-technical.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://techatronic.com/wp-content/uploads/2019/12/ADD-1024x588.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">Seize the Search</h1>
+            <br />
+            <span>Day 2</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>Seize the Search</h2>
+                </div>
+                <p class="text">
+                  Treasure hunt, non-technical. Open to all schools of the university. Participants had to look for clues across the campus and the first team to reach the final clue was declared the winner. 5 clues were there. 18 teams.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://klnce.edu/echelon2k17/assets/images/treasure.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">Algo-Rhythm</h1>
+            <br />
+            <span>Day 2</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>Algo-Rhythm</h2>
+                </div>
+                <p class="text">
+                  A talent hunt event, wherein there were dance and music performances in groups and solo. Saw participants from different institutions like C V Raman, Centurion University. Two winners were awarded in each of the respective two categories - music and dance.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://i.postimg.cc/t4kqR5pq/Algo-Rythm.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">E-Sports: Valorant</h1>
+            <br />
+            <span>Day 2</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>E-Sports: Valorant
+                  </h2>
+                </div>
+                <p class="text">
+                  Online gaming event. 20 participants, 4 teams competed in a game of Valorant.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://media.wired.com/photos/5ea0840cb0490300086261e3/master/w_2560%2Cc_limit/Cul-Reveal_ReactorA_VALORANT.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">Lecture by Anurag Kirti</h1>
+            <br />
+            <span>Day 2</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>Lecture by Anurag Kirti
+                  </h2>
+                </div>
+                <p class="text">
+                  Mr. Anurag Kirti, HR at Wipro, spoke about how to keep up pace with recession and layoffs in 2023. It was an extremely delightful and insightful lecture.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://i.ibb.co/HnfvK3p/1696049635541.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -331,7 +627,7 @@
             <span class="timeline__block__circle"></span>
           </div>
           <div class="timeline__block__head">
-            <h1 class="timeline__block__title">Beta-bytes</h1>
+            <h1 class="timeline__block__title">Origami</h1>
             <br />
             <span>Day 3</span>
           </div>
@@ -339,15 +635,17 @@
             <div class="card">
               <div class="infos">
                 <div class="name">
-                  <h2>Beta-bytes</h2>
+                  <h2>Origami</h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  Participants made origami figures from paper. It was a recreational event. Saw heavy participation from Impart, the art and creativity club of the university.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://imgmedia.lbb.in/media/2020/04/5ea141da96136fe78e99aeba_1587626458117.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -358,7 +656,7 @@
             <span class="timeline__block__circle"></span>
           </div>
           <div class="timeline__block__head">
-            <h1 class="timeline__block__title">Beta-bytes</h1>
+            <h1 class="timeline__block__title">X-Hibit (Call for Posters) </h1>
             <br />
             <span>Day 3</span>
           </div>
@@ -366,15 +664,18 @@
             <div class="card">
               <div class="infos">
                 <div class="name">
-                  <h2>Beta-bytes</h2>
+                  <h2>X-Hibit (Call for Posters)
+                  </h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  Flagship event of SynChronize'23. 34 participants in 13 teams presented their innovative ideas in the field of technology in form of posters. They were judged by two panels consisting of faculty and scholars from different schools of our university.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://i.postimg.cc/jjSCZSpW/XB.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -385,7 +686,7 @@
             <span class="timeline__block__circle"></span>
           </div>
           <div class="timeline__block__head">
-            <h1 class="timeline__block__title">Beta-bytes</h1>
+            <h1 class="timeline__block__title">E-Sports (FIFA)</h1>
             <br />
             <span>Day 3</span>
           </div>
@@ -393,15 +694,134 @@
             <div class="card">
               <div class="infos">
                 <div class="name">
-                  <h2>Beta-bytes</h2>
+                  <h2>E-Sports (FIFA)</h2>
                 </div>
                 <p class="text">
-                  Debugging contest. Participants had to go through 8 levels of questions, and the top three based on
-                  completion time were awarded prizes.
+                  Online gaming event, FIFA. 16 participants competed against each other.
                 </p>
               </div>
               <div class="img">
-                <img src="https://i.postimg.cc/W1nhGkHL/DC.png" style="border-radius: 10%;min-height:75px;">
+                <img
+                  src="https://www.sportsadda.com/static-assets/waf-images/74/9e/41/16-9/Zrq6Hj3v6C.jpeg?v=1.5&w=420%20420w"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">Paradoxe</h1>
+            <br />
+            <span>Day 3</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>Paradoxe</h2>
+                </div>
+                <p class="text">
+                  Treasure hunt with the same principles but the clues were technical riddles to solve. One had to know basic computer science and mathematics fundamentals to be able to solve these clues. First team to reach final clue was declared the winner.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://www.woodlochedge.com/wp-content/uploads/2020/01/treasurehunt.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">AI art</h1>
+            <br />
+            <span>Day 3</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>AI art</h2>
+                </div>
+                <p class="text">
+                  DALL-E is an AI tool that can generate art based on user input, which is a description of the art the user wants to be created. Participants used this tool to generate art and the most creative was awarded a prize.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://cdn.mos.cms.futurecdn.net/mgymLVngxGgQnjEo4ggdjG.png"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">Lecture by Arsh Goyal</h1>
+            <br />
+            <span>Day 3</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>Lecture by Arsh Goyal</h2>
+                </div>
+                <p class="text">
+                  Mr. Arsh Goyal, SDE at Samsung and a popular YouTube content creator for students looking for internships and placements, conducted a lecture on Kickstarting Your Career with an Edge. Valuable lessons and advice were shared.
+
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://i.ibb.co/tBHBnXY/1675118941377.jpg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__block disabled">
+          <div class="timeline__block__bullet-point">
+            <span class="timeline__block__circle"></span>
+          </div>
+          <div class="timeline__block__head">
+            <h1 class="timeline__block__title">DJ night</h1>
+            <br />
+            <span>Day 3</span>
+          </div>
+          <div class="timeline__block__body">
+            <div class="card">
+              <div class="infos">
+                <div class="name">
+                  <h2>DJ Night</h2>
+                </div>
+                <p class="text">
+                  SynChronize'23 was concluded by the talented and popular local DJ, Ajex.
+                </p>
+              </div>
+              <div class="img">
+                <img
+                  src="https://odishabytes.com/wp-content/uploads/2023/03/AZEX-e1679205245283.jpeg"
+                  style="border-radius: 10%; min-height: 75px"
+                />
               </div>
             </div>
           </div>
@@ -412,6 +832,29 @@
   </section>
 
   <!-- Footer Section -->
+  <section class="footer" style="margin-top: -400px;" id="contact">
+    <div class="social">
+      <a href="https://www.instagram.com/synchronize_xim/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/xcse_xim/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/xcse_xim/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/xcse_xim/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/xcse_xim/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <ul class="list">
+      <li>
+        <a href="../Home Page/index.html">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="../contact Us page/index.html">Contact US</a>
+      </li>
+      <li>
+        <a href="../FAQ Page/index.html">FAQ</a>
+      </li>
+    </ul>
+  </section>
 
   <script src="./timeline.js"></script>
 </body>
