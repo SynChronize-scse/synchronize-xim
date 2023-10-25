@@ -646,9 +646,12 @@ hr {
     .footer_email h2 {
       margin-top: 20px;
     }
+    .footer_links {
+      padding-top: 25px;
+    }
 }
   
-@media (max-width: 480px) {
+@media (max-width: 512px) {
     .footer_name h1 {
       font-size: 26px;
     }
@@ -668,6 +671,9 @@ hr {
     .footer_ending_line {
       margin-top: 20px;
       font-size: 12px;
+    }
+    .footer_links {
+      padding-top: 25px;
     }
 }
 /* width */
