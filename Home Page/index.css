@@ -601,8 +601,7 @@ hr {
     .footer_links{
         padding: 0;
     }
-
-  
+    
     .footer_first_part,
     .footer_middle_part {
       flex-direction: column;
@@ -612,6 +611,10 @@ hr {
     }
   
     .footer_first_part {
+      padding: 30px 0;
+    }
+
+    .footer_middle_part {
       padding: 30px 0;
     }
   
@@ -649,6 +652,10 @@ hr {
     .footer_name h1 {
       font-size: 26px;
     }
+
+    .footer_middle_part {
+      padding: 0;
+    }
   
     .footer_name span {
       font-size: 16px;
@@ -660,6 +667,7 @@ hr {
   
     .footer_ending_line {
       margin-top: 20px;
+      font-size: 12px;
     }
 }
 /* width */
