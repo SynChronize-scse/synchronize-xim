@@ -427,6 +427,10 @@ video {
     margin-bottom: 1rem;
 }
 
+.card .card-left h1 br {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .card-container {
         padding: 1.1rem;
@@ -448,6 +452,20 @@ video {
 
     .card .card-right {
         height: 300px !important;
+    }
+
+    .g-tr {
+        top: -150px;
+        right: -50px;
+    }
+
+    .g-tl {
+        top: -150px;
+        left: -50px;
+    }
+
+    .card .card-left h1 br {
+        display: block;
     }
 }
 
