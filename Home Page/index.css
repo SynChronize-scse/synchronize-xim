@@ -739,7 +739,6 @@ video {
     font-family: 'Poppins';
 } */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-
 .footer_container {
     min-height: 380px;
     width: 100vw;
@@ -784,7 +783,7 @@ video {
 }
 
 .footer_icons a:hover {
-    color:black !important;
+    color: black !important;
 }
 
 .footer_container li {
@@ -810,7 +809,7 @@ video {
 }
 
 .footer_links {
-    padding-left: 220px;
+     padding-left: 220px;
 }
 
 .footer_icons {
@@ -831,6 +830,7 @@ video {
     justify-content: center;
     align-items: end;
     margin-top: 10px;
+    text-align: auto;
 }
 
 hr {
@@ -839,7 +839,8 @@ hr {
     margin: 10px 0; 
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1512px) {
     .footer_container {
       height: auto;
     }
@@ -849,7 +850,7 @@ hr {
     .footer_links{
         padding: 0;
     }
-    
+
     .footer_first_part,
     .footer_middle_part {
       flex-direction: column;
@@ -895,7 +896,7 @@ hr {
       margin-top: 20px;
     }
     .footer_links {
-      padding-top: 25px;
+      padding-top: 20px;
     }
 }
   
@@ -919,11 +920,13 @@ hr {
     .footer_ending_line {
       margin-top: 20px;
       font-size: 12px;
+      text-align: center;
     }
     .footer_links {
       padding-top: 25px;
     }
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
