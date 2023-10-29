@@ -35,6 +35,7 @@ body {
   font-size: 1.6rem;
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -692,11 +693,6 @@ ul {
 /* Footer Section */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 .footer_container {
   min-height: 380px;
@@ -781,7 +777,7 @@ ul {
   text-align: auto;
 }
 
-hr {
+.footer_container hr {
   border: none;
   border-top: 1px solid silver;
   margin: 10px 0; 
