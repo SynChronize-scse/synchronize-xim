@@ -690,7 +690,7 @@ ul {
   }
 }
 
-/* Footer Section */
+/*   Footer Section   */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
@@ -744,11 +744,11 @@ ul {
 }
 
 .footer_icons ion-icon[name="logo-github"]:hover {
-  color: #333;
+  color: #171515;
 }
 
 .footer_icons ion-icon[name="logo-facebook"]:hover {
-  color: #483d8b;
+  color: #4267B2;
 }
 
 .footer_container li {
