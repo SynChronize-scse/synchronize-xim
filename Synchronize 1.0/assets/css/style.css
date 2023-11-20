@@ -697,8 +697,7 @@ ul {
 .footer_container {
   min-height: 380px;
   min-width: 100vw;
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, #0a2e42, #112e42);
+  font-family: 'Montserrat', sans-serif !important;
   color: aliceblue;
   padding: 30px 30px;
 }
@@ -736,8 +735,20 @@ ul {
   transition: color 0.2s !important;
 }
 
-.footer_icons a:hover {
-  color: black !important;
+.footer_icons ion-icon[name="logo-instagram"]:hover {
+  color: rgb(188, 42, 141);
+}
+
+.footer_icons ion-icon[name="logo-linkedin"]:hover {
+  color: rgb(0, 119, 181);
+}
+
+.footer_icons ion-icon[name="logo-github"]:hover {
+  color: #333;
+}
+
+.footer_icons ion-icon[name="logo-facebook"]:hover {
+  color: #483d8b;
 }
 
 .footer_container li {
@@ -777,7 +788,7 @@ ul {
   text-align: auto;
 }
 
-.footer_container hr {
+hr {
   border: none;
   border-top: 1px solid silver;
   margin: 10px 0; 
@@ -799,6 +810,7 @@ ul {
     margin: 0 auto;
   }
 }
+
 @media (max-width: 1164px) {
   .footer_first_part,
   .footer_middle_part {
@@ -824,5 +836,17 @@ ul {
   .footer_icons,
   .footer_email {
     padding-top: 20px;
+  }
+}
+
+@media(min-width: 1200px) and (max-width: 1405px) {
+  .footer_container h2 {
+    font-size: 21px;
+  }
+}
+
+@media(min-width: 300px) and (max-width: 450px) {
+  .footer_ending_line {
+    font-size: 12px;
   }
 }
