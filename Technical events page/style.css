@@ -1266,11 +1266,11 @@ p {
 }
 
 .footer_icons ion-icon[name="logo-github"]:hover {
-  color: #333;
+  color: #171515;
 }
 
 .footer_icons ion-icon[name="logo-facebook"]:hover {
-  color: #483d8b;
+  color: #4267B2;
 }
 
 .footer_container li {
