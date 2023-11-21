@@ -853,6 +853,11 @@ hr {
   font-size: 20px;
 }
 
+.footer_container h2{
+    font-weight: bold;
+}
+
+
 @media (min-width: 1164px) {
   .footer_container {
     max-width: 1200px;
