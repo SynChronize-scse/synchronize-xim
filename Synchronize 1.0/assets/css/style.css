@@ -61,9 +61,9 @@ h2 {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 10%;
+  left: -4.2%;
+  width: 109%;
+  padding: 1.3rem 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,7 +104,7 @@ h2 {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -113,12 +113,13 @@ h2 {
 .nav-item {
   position: relative;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
-  line-height: 25px;
-  letter-spacing: -0.13px;
+  line-height: 27px;
+  letter-spacing: 0.9px;
   text-decoration: none;
-  margin-left: 2.5rem;
+  margin-left: 1.9rem;
+  margin-right: 0.0rem;
   transition: all 0.5s ease;
 }
 
@@ -141,7 +142,7 @@ h2 {
 
 @media (max-width: 992px) {
   .header {
-    padding: 1.3rem 5%;
+    padding: 1.3rem 7%;
   }
 }
 
@@ -181,7 +182,7 @@ h2 {
 
   .nav-item {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     margin: 1.5rem 0;
     text-align: center;
     transform: translateY(-50px);
@@ -350,7 +351,7 @@ h2 {
 
   .banner__title,
   .footer__title {
-    font-size: 5rem;
+    font-size: 10rem;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
