@@ -15,29 +15,35 @@
 </head>
 
 <body>
-  <section class="first-section">
-    <!-- <div class="overlay"></div> -->
-    <div id="particles-js">
-      <!-- Navbar -->
-
-      <nav>
-        <div class="hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-          <li><a href="../Synchronize 1.0/index.html">Synchronize 1.0</a></li>
-          <li><a href="../Technical events page/index.html">Technical Events</a></li>
-          <li><a href="../Fun events page/index.html">Fun Events</a></li>
-          <!-- <li><a href="../Workshop/index.html">Workshop</a></li> -->
-          <!-- <li><a href="../Guest Lecture/index.html">Guest Lectures</a></li> -->
-          <li><a href="../Exhibition/index.html">Exhibitions</a></li>
-          <li><a href="../Algo-Rhythm/index.html">Cultural Events</a></li>
-          <!-- <li><a href="../Credits Page/index.html">The Team</a></li> -->
-
-        </ul>
-      </nav>
+    <section class="first-section">
+      <!-- <div class="overlay"></div> -->
+      <div id="particles-js">
+        <!-- Navbar -->
+      <div class="landingpage">
+        <div class="hamburger-menu">
+          <div class="close-icon"></div>
+          <div class="blur-overlay" id="blurOverlay"></div>
+          <button type="button" class="hamburger-button" id="hamburgerButton">
+            <span class="hamburger-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
+          </button>
+          <nav class="hamburger-nav" id="hamburgerNav">
+            <button type="button" class="close-button" id="closeButton">
+              ✖
+            </button>
+            <ul>
+              <li><a href="../Synchronize 1.0/index.html">Synchronize 1.0</a></li>
+              <li><a href="../Technical events page/index.html">Technical Events</a></li>
+              <li><a href="../Fun events page/index.html">Fun Events</a></li>
+              <li><a href="../Exhibition/index.html">Exhibitions</a></li>              
+              <li><a href="../Algo-Rhythm/index.html">Cultural Events</a></li>  
+            </ul>
+          </nav>
+        </div> 
+      </div> 
       <div class="hero-cont">
         <div class="logo">
           <img src="./assets/Synchronize.png" alt="">
@@ -361,8 +367,7 @@
           <div class="footer_address">
               <h2>FIND US</h1>
               <ul class="footer_list_address">
-                  <li>XIM University, Plot No:12(A), Nijigada, Kurki, Harirajpur, Odisha 752050</li>
-                  <li><a href="#"><ion-icon name="map-outline"></ion-icon> Here's the map</a></li>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.422649860272!2d85.76026141458323!3d20.15812042230442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19af103360ec8f%3A0x734b96dc8afdf0ef!2sXIM%20University!5e0!3m2!1sen!2sin!4v1674952610019!5m2!1sen!2sin" width="320" height="200" loading="lazy" style="border:5px solid rgb(62, 61, 61); border-radius:10px;"></iframe>
               </ul>
           </div>
           <div class="footer_phone_number">
@@ -383,13 +388,60 @@
       <div class="footer_ending_line">Designed and Developed with 💙 by Tech Team</div>
     </section>
 
-  
+
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
     integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $ = function (id) {
+    return document.getElementById(id);
+  }
+
+  var show = function (id) {
+    $(id).style.display = 'block';
+  }
+
+  var hide = function (id) {
+    $(id).style.display = 'none';
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerButton = document.querySelector(".hamburger-button");
+    const hamburgerNav = document.querySelector(".hamburger-nav");
+    const closeButton = document.getElementById("closeButton");
+    let animationPlayed = false;
+
+    hamburgerButton.addEventListener("click", function() {
+      hamburgerButton.classList.toggle("active");
+      hamburgerNav.classList.toggle("open-menu");
+
+      if (!animationPlayed) {
+        const listItems = document.querySelectorAll(".hamburger-nav li");
+        listItems.forEach((item, index) => {
+
+          item.style.transitionDelay = `${index * 0.3}s`;
+        });
+
+        animationPlayed = true;
+      } else {
+        const listItems = document.querySelectorAll(".hamburger-nav li");
+        listItems.forEach((item, index) => {
+          item.style.transitionDelay = `${index * 0.1}s`;
+        });
+      }
+    });
+
+    closeButton.addEventListener("click", function() {
+      hamburgerNav.classList.remove("open-menu");
+    });
+  });
+
+</script>
 </body>
 
 </html>

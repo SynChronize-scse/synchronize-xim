@@ -38,7 +38,7 @@
           <li><a href="../Home Page/index.html">Home</a></li>
           <li><a href="../Technical events page/index.html">Technical Events</a></li>
           <li><a href="../Fun events page/index.html">Fun Events</a></li>
-          <li><a href="#">Guest Lectures</a></li>
+          <li><a href="../Guest Lecture/index.html">Guest Lectures</a></li>
           <li><a href="../Credits Page/index.html">Credits</a></li>  
         </ul>
       </nav>
@@ -639,8 +639,7 @@
         <div class="footer_address">
             <h2>FIND US</h1>
             <ul class="footer_list_address">
-                <li>XIM University, Plot No:12(A), Nijigada, Kurki, Harirajpur, Odisha 752050</li>
-                <li><a href="#"><ion-icon name="map-outline"></ion-icon> Here's the map</a></li>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.422649860272!2d85.76026141458323!3d20.15812042230442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19af103360ec8f%3A0x734b96dc8afdf0ef!2sXIM%20University!5e0!3m2!1sen!2sin!4v1674952610019!5m2!1sen!2sin" width="320" height="200" loading="lazy" style="border:5px solid rgb(62, 61, 61); border-radius:10px;"></iframe>
             </ul>
         </div>
         <div class="footer_phone_number">
@@ -665,29 +664,49 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
-    $ = function (id) {
-      return document.getElementById(id);
-    }
-
-    var show = function (id) {
-      $(id).style.display = 'block';
-    }
-    var hide = function (id) {
-      $(id).style.display = 'none';
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-      const hamburgerButton = document.querySelector(".hamburger-button");
-      const hamburgerNav = document.querySelector(".hamburger-nav");
-      const closeButton = document.getElementById("closeButton");
+      $ = function (id) {
+        return document.getElementById(id);
+      }
     
-      hamburgerButton.addEventListener("click", function() {
-        hamburgerButton.classList.toggle("active");
-        hamburgerNav.classList.toggle("open-menu");
+      var show = function (id) {
+        $(id).style.display = 'block';
+      }
+    
+      var hide = function (id) {
+        $(id).style.display = 'none';
+      }
+    
+      document.addEventListener("DOMContentLoaded", function() {
+        const hamburgerButton = document.querySelector(".hamburger-button");
+        const hamburgerNav = document.querySelector(".hamburger-nav");
+        const closeButton = document.getElementById("closeButton");
+        let animationPlayed = false;
+    
+        hamburgerButton.addEventListener("click", function() {
+          hamburgerButton.classList.toggle("active");
+          hamburgerNav.classList.toggle("open-menu");
+    
+          if (!animationPlayed) {
+            const listItems = document.querySelectorAll(".hamburger-nav li");
+            listItems.forEach((item, index) => {
+
+              item.style.transitionDelay = `${index * 0.3}s`;
+            });
+    
+            animationPlayed = true;
+           } else {
+            const listItems = document.querySelectorAll(".hamburger-nav li");
+            listItems.forEach((item, index) => {
+              item.style.transitionDelay = `${index * 0.1}s`;
+            });
+          } 
+        });
+    
+        closeButton.addEventListener("click", function() {
+          hamburgerNav.classList.remove("open-menu");
+        });
       });
-      closeButton.addEventListener("click", function() {
-        hamburgerNav.classList.remove("open-menu");
-      });
-    });
+    
   </script>
 </body>
 
