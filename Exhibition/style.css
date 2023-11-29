@@ -377,3 +377,58 @@ a{
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 10px;
+    }
+
+    .carousel .list .item .content {
+        padding-right: 10%;
+    }
+
+    .carousel .list .item .content .title {
+        font-size: 24px;
+    }
+
+    .about-event h1 {
+        font-size: 40px;
+    }
+
+    .about-event p {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .arrows button {
+        color: #333;
+        margin-top: 5px; 
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        font-size: 8px;
+    }
+
+    .carousel .list .item .content .title {
+        font-size: 18px;
+    }
+
+    .about-event h1 {
+        font-size: 30px;
+    }
+
+    .about-event p {
+        font-size: 16px;
+    }
+
+    .arrows button {
+        color: #333;
+        margin-top: 5px;
+    }
+}
+
