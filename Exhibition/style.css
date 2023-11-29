@@ -6,6 +6,7 @@ body{
     color: #eee;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
