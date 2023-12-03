@@ -50,7 +50,7 @@ a{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
-.carousel .list .item .author{
+.carousel .list .item .first-line{
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 3px;
@@ -169,7 +169,7 @@ a{
 
 /* animation text in first item */
 
-.carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content .first-line,
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
@@ -295,7 +295,7 @@ a{
 .carousel.prev .arrows button{
     pointer-events: none;
 }
-.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .first-line,
 .carousel.prev .list .item:nth-child(2) .content .title,
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
@@ -458,7 +458,7 @@ a{
         font-size: 4em !important;
     }
 
-    .carousel .list .item .author {
+    .carousel .list .item .first-line {
         font-size: 1.35em !important;
     }
 
@@ -473,6 +473,8 @@ a{
         max-width: 80%;
     }
 }
+
+/* Footer Section */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
