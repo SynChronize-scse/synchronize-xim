@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nova+Square&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-body{
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
     background-color: #0a000f;
     color: #eee;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
     overflow-x: hidden;
+}
+
+.exhibition-content {
+    font-size: 12px;
 }
 a{
     text-decoration: none;
@@ -42,7 +50,7 @@ a{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
-.carousel .list .item .author{
+.carousel .list .item .first-line{
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 3px;
@@ -77,11 +85,20 @@ a{
     font-family: Poppins;
     font-weight: 500;
 }
+
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
 }
+
+.carousel .list .item .buttons button:hover {
+    background-color: #0a000f; 
+    color: #fff; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
 /* thumbail */
 .thumbnail{
     position: absolute;
@@ -152,7 +169,7 @@ a{
 
 /* animation text in first item */
 
-.carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content .first-line,
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
@@ -278,7 +295,7 @@ a{
 .carousel.prev .arrows button{
     pointer-events: none;
 }
-.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .first-line,
 .carousel.prev .list .item:nth-child(2) .content .title,
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
@@ -323,6 +340,8 @@ a{
     color: #008080;
     letter-spacing: 5px;
     animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .about-event p {
@@ -356,6 +375,7 @@ a{
 .card-content {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .card button {
@@ -431,5 +451,193 @@ a{
         color: #333;
         margin-top: 5px;
     }
+}
+
+@media screen and (min-width: 340px) and (max-width: 450px) {
+    .carousel .list .item .topic {
+        font-size: 4em !important;
+    }
+
+    .carousel .list .item .first-line {
+        font-size: 1.35em !important;
+    }
+
+    .carousel .list .item .title {
+        font-size: 1.65em !important;
+    }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 700px) {
+    .card {
+        max-width: 80%;
+    }
+}
+
+/* Footer Section */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.footer_container {
+  min-height: 380px;
+  min-width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+  padding: 30px 30px;
+}
+
+.footer_first_part {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_middle_part {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
+}
+
+.footer_container ul {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.footer_container a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.3s, text-shadow 0.2s;
+}
+
+.footer_container a:hover {
+  text-shadow: 2px 2px 4px #00FFFF;
+  text-decoration: underline;
+}
+
+.footer_icons a {
+  transition: color 0.2s !important;
+}
+
+.footer_icons ion-icon[name="logo-instagram"]:hover {
+  color: rgb(188, 42, 141);
+}
+
+.footer_icons ion-icon[name="logo-linkedin"]:hover {
+  color: rgb(0, 119, 181);
+}
+
+.footer_icons ion-icon[name="logo-github"]:hover {
+  color: #171515;
+}
+
+.footer_icons ion-icon[name="logo-facebook"]:hover {
+  color: #4267B2;
+}
+
+.footer_container li {
+  padding-top: 12px;
+}
+
+.footer_links {
+  padding-left: 270px;
+}
+
+.footer_phone_number {
+  padding-left: 270px;
+}
+
+.footer_icons {
+  padding-left: 233px;
+}
+.footer_icons h2 {
+  margin-bottom: 20px;
+  padding-left: 7px;
+}
+
+.footer_icons span{
+  font-size: 30px;
+  padding: 0 7px;
+}
+
+.footer_email {
+  padding-left: 240px;
+}
+
+.footer_ending_line {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 15px;
+  text-align: auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid silver;
+  margin: 10px 0; 
+}
+
+.footer_name h1{
+  font-size: 45px;
+  padding-top: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer_name span {
+  font-size: 20px;
+}
+
+.footer_container h2{
+    font-weight: bold;
+}
+
+
+@media (min-width: 1164px) {
+  .footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1164px) {
+  .footer_first_part,
+  .footer_middle_part {
+    grid-template-columns: 1fr; 
+  }
+
+  .footer_links,
+  .footer_phone_number,
+  .footer_icons,
+  .footer_email,
+  .footer_name,
+  .footer_address,
+  .footer_ending_line {
+    padding-left: 0; 
+    text-align: center; 
+  }
+
+  .footer_icons h2 {
+    padding-left: 0;
+  }
+  .footer_links,
+  .footer_phone_number,
+  .footer_icons,
+  .footer_email {
+    padding-top: 20px;
+  }
+}
+
+@media(min-width: 1200px) and (max-width: 1405px) {
+  .footer_container h2 {
+    font-size: 21px;
+  }
+}
+
+@media(min-width: 300px) and (max-width: 450px) {
+  .footer_ending_line {
+    font-size: 12px;
+  }
 }
 
