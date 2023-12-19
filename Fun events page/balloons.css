@@ -1,0 +1,311 @@
+.balloon {
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: 145px;
+    background: hsl(215, 50%, 65%);
+    border-radius: 80%;
+    /* position: relative; */
+    box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+    margin: 20px 30px;
+    transition: transform 2s ease;
+    z-index: -1;
+    animation: balloons1 60s ease-in-out infinite;
+    transform-origin: bottom center;
+    inset: 0 0 0 0;
+    /* overflow: hidden;
+    clip-path: circle(50% at center); */
+}
+
+@keyframes balloons1 {
+
+    0% {
+
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        /* opacity: 1; */
+    }
+
+    12.5% {
+        transform: translate(120vw, -120%) rotateZ(20deg);
+    }
+
+    25% {
+        transform: translate(-200%, 50vh) rotateZ(-20deg);
+    }
+
+    37.5% {
+        transform: translate(-200%, -120%) rotateZ(-40deg);
+        /* opacity: .5; */
+    }
+
+    50% {
+        transform: translate(100vw, 50vh) rotateZ(0deg);
+    }
+
+    62.5% {
+        transform: translate(20vw, 100vh) rotateZ(20deg);
+    }
+
+    75% {
+        transform: translate(200%, 90vh) rotateZ(20deg);
+        /* opacity: .25; */
+    }
+
+    87.5% {
+        transform: translate(50vw, -200%) rotateZ(20deg);
+    }
+
+    100% {
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        /* opacity: 1; */
+    }
+}
+
+/* ballon2 keyframe with different path */
+@keyframes balloons2 {
+
+    0% {
+
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        /* opacity: 1; */
+    }
+
+    15.5% {
+        transform: translate(120vw, -120%) rotateZ(20deg);
+    }
+
+    30% {
+        transform: translate(-200%, 50vh) rotateZ(-20deg);
+    }
+
+    39.5% {
+        transform: translate(-200%, -120%) rotateZ(-40deg);
+        /* opacity: .5; */
+    }
+
+    55% {
+        transform: translate(100vw, 50vh) rotateZ(0deg);
+    }
+
+    60.5% {
+        transform: translate(20vw, 100vh) rotateZ(20deg);
+    }
+
+    70% {
+        transform: translate(200%, 70vh) rotateZ(20deg);
+        /* opacity: .25; */
+    }
+
+    95% {
+        transform: translate(50vw, -200%) rotateZ(20deg);
+    }
+
+    100% {
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+        /* opacity: 1; */
+    }
+}
+
+
+@keyframes balloons3 {
+    0% {
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+    }
+
+    12.5% {
+        transform: translate(150vw, -120%) rotateZ(20deg);
+    }
+
+    25% {
+        transform: translate(-200%, 70vh) rotateZ(-20deg);
+    }
+
+    37.5% {
+        transform: translate(-200%, -120%) rotateZ(-40deg);
+    }
+
+    50% {
+        transform: translate(80vw, 50vh) rotateZ(0deg);
+    }
+
+    62.5% {
+        transform: translate(30vw, 100vh) rotateZ(20deg);
+    }
+
+    75% {
+        transform: translate(200%, 80vh) rotateZ(20deg);
+    }
+
+    87.5% {
+        transform: translate(50vw, -200%) rotateZ(20deg);
+    }
+
+    100% {
+        transform: translate(-200%, 110vh) rotateZ(0deg);
+    }
+}
+
+@keyframes balloons4 {
+    0% {
+        transform: translate(120vw, -50%);
+    }
+
+    25% {
+        transform: translate(-200%, 50vh);
+    }
+
+    50% {
+        transform: translate(100vw, 40vh);
+    }
+
+    75% {
+        transform: translate(200%, 100vh);
+    }
+
+    100% {
+        transform: translate(-200%, 110vh);
+    }
+}
+
+
+
+@keyframes balloons5 {
+    0% {
+        transform: translate(-150%, -150%);
+    }
+
+    25% {
+        transform: translate(50vw, -200%);
+    }
+
+    50% {
+        transform: translate(100vw, 50vh);
+    }
+
+    75% {
+        transform: translate(200%, 100vh);
+    }
+
+    100% {
+        transform: translate(-200%, 110vh);
+    }
+}
+
+.balloon:before {
+    content: "▲";
+    font-size: 20px;
+    color: hsl(215, 30%, 50%);
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    z-index: -100;
+}
+
+.balloon:after {
+    display: inline-block;
+    top: 153px;
+    position: relative;
+    left: 50%;
+    height: 250px;
+    width: 1px;
+    margin: 0 auto;
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.balloon:nth-child(2) {
+    background: hsl(245, 40%, 65%);
+    animation: balloons2 60s ease-in-out infinite;
+    inset: 0 0 0 20px;
+}
+
+.balloon:nth-child(2):before {
+    color: hsl(245, 40%, 65%);
+}
+
+.balloon:nth-child(3) {
+    background: hsl(139, 50%, 60%);
+    animation: balloons3 60s ease-in-out infinite;
+    inset: 0 0 0 40px;
+}
+
+.balloon:nth-child(3):before {
+    color: hsl(139, 30%, 50%);
+}
+
+.balloon:nth-child(4) {
+    background: hsl(59, 50%, 58%);
+    animation: balloons4 60s ease-in-out infinite;
+    inset: 0 0 0 60px;
+}
+
+.balloon:nth-child(4):before {
+    color: hsl(59, 30%, 52%);
+}
+
+.balloon:nth-child(5) {
+    background: hsl(23, 55%, 57%);
+    animation: balloons5 10s ease-in-out infinite;
+    inset: 0 0 0 80px;
+}
+
+.balloon:nth-child(5):before {
+    color: hsl(23, 44%, 46%);
+}
+
+
+
+@keyframes airplaneAnimation {
+    0% {
+        transform: translateX(0) translateY(10vh) rotateZ(0);
+    }
+
+    12.5% {
+        transform: translateX(50vw) translateY(-30vh);
+    }
+
+    25% {
+        transform: translateX(75vw) translateY(-35vh);
+    }
+
+    37.5% {
+        transform: translateX(95vw) translateY(-40vh);
+    }
+
+    50% {
+        transform: translateX(105vw) translateY(-60vh) rotateZ(180deg);
+    }
+
+    62.5% {
+        transform: translateX(135vw) translateY(50vh) rotateZ(180deg);
+    }
+
+    75% {
+        transform: translateX(95vw) translateY(40vh) rotateZ(180deg);
+    }
+
+    87.5% {
+        transform: translateX(75vw) translateY(25vh) rotateZ(180deg);
+    }
+
+    95% {
+        transform: translateX(25vw) translateY(10vh) rotateZ(180deg);
+    }
+
+    100% {
+        transform: translateX(-5vw) translateY(25vh) rotateZ(0);
+    }
+}
+
+.airplane {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(0) translateY(-50%);
+    animation: airplaneAnimation 10s linear infinite;
+    width: 50px;
+    height: 50px;
+    background-color: #005780;
+}
