@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Gulfs Display';
+    src: url('./fonts/GulfsDisplay-Expanded.ttf') format('truetype');
+}
+
 .fun-events-landing-section {
     padding: 0px 50px 0 50px;
     background-color: #FBBF2D;
