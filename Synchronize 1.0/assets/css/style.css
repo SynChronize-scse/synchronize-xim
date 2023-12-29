@@ -799,7 +799,7 @@ hr {
 .footer_name h1{
   font-size: 45px;
   padding-top: 40px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
 }
 
 .footer_name span {
