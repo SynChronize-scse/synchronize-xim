@@ -11,6 +11,32 @@
     <link rel="shortcut icon" href="../Home Page/synclogo.png" type="image/png">
 </head>
 <body>
+
+    <div class="landingpage">
+        <div class="hamburger-menu">
+          <div class="close-icon"></div>
+          <div class="blur-overlay" id="blurOverlay"></div>
+          <button type="button" class="hamburger-button" id="hamburgerButton">
+            <span class="hamburger-icon">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
+          </button>
+          <nav class="hamburger-nav" id="hamburgerNav">
+            <button type="button" class="close-button" id="closeButton">
+              ✖
+            </button>
+            <ul>
+              <li><a href="../Home Page/index.html">Home</a></li>
+              <li><a href="../Technical events page/index.html">Technical Events</a></li>
+              <li><a href="../Fun events page/index.html">Fun Events</a></li>
+              <li><a href="../Algo-Rhythm/index.html">Cultural Events</a></li>
+              <li><a href="../Credits Page/index.html">Credits</a></li>  
+            </ul>
+          </nav>
+        </div>
+  
     <div class="exhibition-content">
     <!-- carousel -->
     <div class="carousel">
@@ -232,6 +258,49 @@
                 next.click();
             }, timeAutoNext)
         }
+
+        $ = function (id) {
+            return document.getElementById(id);
+          }
+        
+          var show = function (id) {
+            $(id).style.display = 'block';
+          }
+        
+          var hide = function (id) {
+            $(id).style.display = 'none';
+          }
+        
+          document.addEventListener("DOMContentLoaded", function() {
+            const hamburgerButton = document.querySelector(".hamburger-button");
+            const hamburgerNav = document.querySelector(".hamburger-nav");
+            const closeButton = document.getElementById("closeButton");
+            let animationPlayed = false;
+        
+            hamburgerButton.addEventListener("click", function() {
+              hamburgerButton.classList.toggle("active");
+              hamburgerNav.classList.toggle("open-menu");
+        
+              if (!animationPlayed) {
+                const listItems = document.querySelectorAll(".hamburger-nav li");
+                listItems.forEach((item, index) => {
+      
+                  item.style.transitionDelay = `${index * 0.3}s`;
+                });
+        
+                animationPlayed = true;
+               } else {
+                const listItems = document.querySelectorAll(".hamburger-nav li");
+                listItems.forEach((item, index) => {
+                  item.style.transitionDelay = `${index * 0.1}s`;
+                });
+              } 
+            });
+        
+            closeButton.addEventListener("click", function() {
+              hamburgerNav.classList.remove("open-menu");
+            });
+          });
     </script>
 </body>
 </html>
