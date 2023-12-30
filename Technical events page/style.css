@@ -1510,7 +1510,7 @@ a {
     min-width: 100vw;
     padding: 100px;
     margin-top: -40px;
-    background-image: url('https://i.postimg.cc/NGN0sn4G/210908.jpg');
+    background-image: url('https://i.postimg.cc/ZnnXSd1T/146084.png');
     margin-bottom: 20px;
 }
 
@@ -1528,6 +1528,28 @@ a {
   0 0 17px #228dff, 0 0 20px #228dff, 0 0 25px #228dff, 0 0 30px #228dff;
 }
 
+.glowIn {
+  color: white;
+}
+.glowIn span {
+  animation: glow-in 0.8s both;
+}
+
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
 
 
 .sr-only {
