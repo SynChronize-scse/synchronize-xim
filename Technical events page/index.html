@@ -45,7 +45,6 @@
       </nav>
     </div>
     
-    <div id="binary-rain"></div>
     <div class="container">
         <div class="top">
           <div class="tech_logo">
@@ -58,25 +57,7 @@
         </div>   
 
     </div>
-   
-    <script>
-      function createBinaryRain() {
-          var binaryRain = document.getElementById("binary-rain");
 
-          var binaryPattern = ["10", "001", "00", "11", "0", "1", "100", "0001", "0000", "1000", "1111"];
-
-          for (var i = 0; i < 50; i++) { 
-              var binaryDigit = document.createElement("span");
-              binaryDigit.className = "binary-digit";
-              binaryDigit.innerHTML = binaryPattern[i % binaryPattern.length];
-              binaryDigit.style.left = Math.random() * 100 + "vw";
-              binaryDigit.style.animationDelay = (i * 0.1) + "s";
-              binaryRain.appendChild(binaryDigit);
-          }
-      }
-
-      createBinaryRain();
-  </script>
     <div class="discover-title">
       <p>Events List</p>
     </div>
