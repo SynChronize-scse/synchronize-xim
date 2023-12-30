@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @font-face {
     font-family: 'Gulfs Display';
     src: url('./fonts/GulfsDisplay-Expanded.ttf') format('truetype');
@@ -1323,8 +1324,6 @@
 
 /* Footer Section */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 .footer_container {
   min-height: 380px;
