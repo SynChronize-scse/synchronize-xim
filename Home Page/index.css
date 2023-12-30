@@ -272,7 +272,7 @@ body {
 
 
 .first-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/BZzVwTWd/6.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/Kj7gTcQg/1943075.jpg');
     background-size: cover;
     min-height: 100vh;
     overflow: hidden;
@@ -288,7 +288,7 @@ body {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -1285,3 +1285,7 @@ width: 90vh;
 
 }
 } */
+
+.flipdown{
+  margin-top: 50px;
+}

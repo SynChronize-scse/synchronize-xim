@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
+    
 </head>
 
 <body>
@@ -54,9 +58,34 @@
         <div class="dates">
           <h3>FEBRUARY 1-3</h3>
         </div>
+        
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+              // Set the target date to February 1, 2024, at 00:00:00 (midnight)
+              var targetDate = new Date('February 1, 2024 00:00:00').getTime() / 1000;
+      
+              // Set up FlipDown
+              var flipdown = new FlipDown(targetDate)
+                  // Start the countdown
+                  .start()
+                  // Do something when the countdown ends
+                  .ifEnded(() => {
+                      console.log('The countdown has ended!');
+                  });
+      
+              // Always set the theme to light
+              let body = document.body;
+              body.classList.add('light-theme');
+              body.querySelector('#flipdown').classList.add('flipdown__theme-light');
+      
+              var ver = document.getElementById('ver');
+              ver.innerHTML = flipdown.version;
+          });
+      </script>
         <div class="regbtn">
           <a href="https://forms.gle/7sxoT1AAgwL45P4y7" target="_blank"><button>Register Now</button></a>
         </div>
+        <div id="flipdown" class="flipdown"></div>
       </div>
       <!-- particles-js file -->
       <script type="text/javascript" src="js/particles.min.js"></script>
