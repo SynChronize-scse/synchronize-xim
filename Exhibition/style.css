@@ -919,5 +919,9 @@ hr {
   .footer_ending_line {
     font-size: 12px;
   }
+
+  .footer_container li {
+    font-size: 18px;
+  }
 }
 
