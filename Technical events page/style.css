@@ -1987,6 +1987,39 @@ a {
   color: white;
 }
 
+#binary-rain {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.binary-digit {
+  position: absolute;
+  color: #00ff00;
+  font-size: 40px;
+  white-space: nowrap;
+  opacity: 0.6;
+  user-select: none;
+  animation: falling 5s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+@keyframes falling {
+  to {
+      transform: translateY(80vh);
+  }
+}
 
 .tech_logo img{
   width: 30%;
