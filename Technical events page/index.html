@@ -55,7 +55,20 @@
           </div>
           <p class="glowIn">The SynChronize Tech-Fest will be renowned for its enormous selection of scientific and technology-related activities and contests. These experiences provide you the opportunity to think creatively, in contrast to dry textbook study. </p>
         </div>   
-
+        <script>
+          "use strict";
+          var glowInTexts = document.querySelectorAll(".glowIn");
+          glowInTexts.forEach(function (glowInText) {
+            var letters = glowInText.textContent.split("");
+            glowInText.textContent = "";
+            letters.forEach(function (letter, i) {
+              var span = document.createElement("span");
+              span.textContent = letter;
+              span.style.animationDelay = i * 0.05 + "s";
+              glowInText.append(span);
+            });
+          });
+          </script>
     </div>
 
     <div class="discover-title">
