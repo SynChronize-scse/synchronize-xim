@@ -10,7 +10,7 @@
     margin: 20px 30px;
     transition: transform 2s ease;
     z-index: -1;
-    animation: balloons1 60s ease-in-out infinite;
+    animation: balloons1 10s ease-in-out infinite;
     transform-origin: bottom center;
     inset: 0 0 0 0;
     /* overflow: hidden;
@@ -18,11 +18,38 @@
 }
 
 @keyframes balloons1 {
+    0% {
+        transform: translateY(0) translateX(0) rotateZ(0deg);
+    }
+
+    15% {
+        transform: translateY(-25vh) translateX(30vw) rotateZ(5deg);
+    }
+
+    30% {
+        transform: translateY(-50vh) translateX(-25vw) rotateZ(-10deg);
+    }
+
+    50% {
+        transform: translateY(-80vh) translateX(35vw) rotateZ(20deg);
+    }
+
+    70% {
+        transform: translateY(-110vh) translateX(-20vw) rotateZ(-15deg);
+    }
+
+    100% {
+        transform: translateY(-150vh) translateX(0) rotateZ(0deg);
+    }
+}
+
+
+
+/* @keyframes balloons1 {
 
     0% {
 
         transform: translate(-200%, 110vh) rotateZ(0deg);
-        /* opacity: 1; */
     }
 
     12.5% {
@@ -35,7 +62,6 @@
 
     37.5% {
         transform: translate(-200%, -120%) rotateZ(-40deg);
-        /* opacity: .5; */
     }
 
     50% {
@@ -48,7 +74,6 @@
 
     75% {
         transform: translate(200%, 90vh) rotateZ(20deg);
-        /* opacity: .25; */
     }
 
     87.5% {
@@ -57,17 +82,46 @@
 
     100% {
         transform: translate(-200%, 110vh) rotateZ(0deg);
-        /* opacity: 1; */
+    }
+} */
+
+
+/* Keyframes for balloons2 */
+@keyframes balloons2 {
+    0% {
+        transform: translateY(0) translateX(0) rotateZ(0deg);
+    }
+
+    20% {
+        transform: translateY(-30vh) translateX(20vw) rotateZ(10deg);
+    }
+
+    40% {
+        transform: translateY(-60vh) translateX(-15vw) rotateZ(-5deg);
+    }
+
+    60% {
+        transform: translateY(-90vh) translateX(25vw) rotateZ(15deg);
+    }
+
+    80% {
+        transform: translateY(-120vh) translateX(-10vw) rotateZ(-10deg);
+    }
+
+    100% {
+        transform: translateY(-150vh) translateX(0) rotateZ(0deg);
     }
 }
 
+
+
+
 /* ballon2 keyframe with different path */
-@keyframes balloons2 {
+/* @keyframes balloons2 {
 
     0% {
 
         transform: translate(-200%, 110vh) rotateZ(0deg);
-        /* opacity: 1; */
     }
 
     15.5% {
@@ -80,7 +134,6 @@
 
     39.5% {
         transform: translate(-200%, -120%) rotateZ(-40deg);
-        /* opacity: .5; */
     }
 
     55% {
@@ -93,7 +146,6 @@
 
     70% {
         transform: translate(200%, 70vh) rotateZ(20deg);
-        /* opacity: .25; */
     }
 
     95% {
@@ -102,9 +154,8 @@
 
     100% {
         transform: translate(-200%, 110vh) rotateZ(0deg);
-        /* opacity: 1; */
     }
-}
+} */
 
 
 @keyframes balloons3 {
@@ -217,7 +268,7 @@
 
 .balloon:nth-child(2) {
     background: hsl(245, 40%, 65%);
-    animation: balloons2 60s ease-in-out infinite;
+    animation: balloons2 10s ease-in-out infinite;
     inset: 0 0 0 20px;
 }
 
@@ -227,7 +278,7 @@
 
 .balloon:nth-child(3) {
     background: hsl(139, 50%, 60%);
-    animation: balloons3 60s ease-in-out infinite;
+    animation: balloons3 10s ease-in-out infinite;
     inset: 0 0 0 40px;
 }
 
@@ -237,7 +288,7 @@
 
 .balloon:nth-child(4) {
     background: hsl(59, 50%, 58%);
-    animation: balloons4 60s ease-in-out infinite;
+    animation: balloons4 10s ease-in-out infinite;
     inset: 0 0 0 60px;
 }
 
@@ -308,4 +359,26 @@
     width: 50px;
     height: 50px;
     background-color: #005780;
+}
+
+
+@media (max-width: 768px) {
+    .balloon {
+        width: 80px;
+        height: 100px;
+    }
+
+    .balloon:before {
+        font-size: 15px;
+        bottom: -10px;
+    }
+
+    .balloon:after {
+        height: 200px;
+    }
+
+    .airplane {
+        width: 30px;
+        height: 30px;
+    }
 }
