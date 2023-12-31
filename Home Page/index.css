@@ -272,7 +272,7 @@ body {
 
 
 .first-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/BZzVwTWd/6.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.736)), url('https://i.postimg.cc/Kj7gTcQg/1943075.jpg');
     background-size: cover;
     min-height: 100vh;
     overflow: hidden;
@@ -288,7 +288,7 @@ body {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -298,6 +298,8 @@ body {
 .logo {
     max-width: 90%;
     z-index: -120;
+    margin-bottom: -250px;
+    margin-top: -150px;
 }
 
 #particles-js .logo img {
@@ -996,7 +998,7 @@ hr {
 .footer_name h1{
   font-size: 45px;
   padding-top: 40px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
 }
 
 .footer_name span {
@@ -1183,11 +1185,14 @@ hr {
 
     .first-section .logo img {
         width: 100%;
-        scale: 2;
+        scale: 1;
     }
 
     .slogan h4 {
         font-size: 0.9rem;
+        margin-top: 150px;
+        line-height: 25px;
+        margin-bottom: 20px;
     }
 
     .dates h3 {
@@ -1237,14 +1242,15 @@ hr {
 }
 
 
-/* @media only screen and (min-device-width:490px) and (max-device-width: 1024px){
+@media only screen and (min-device-width:490px) and (max-device-width: 1024px){
     
     #particles-js .logo img {
-        width: 60%;
+        width: 100%;
         scale: 0.8;
-        margin-bottom: 5%;
-        transform: translate(39vh, 40vh);
+        margin-bottom: 100px;
+
     }
+
 
     .regbtn button {
         transform: translate(30em, 20em);
@@ -1284,4 +1290,8 @@ padding-right: 0;
 width: 90vh;
 
 }
-} */
+}
+
+.flipdown{
+  margin-top: 50px;
+}
