@@ -3,6 +3,19 @@
     src: url('./fonts/GulfsDisplay-Expanded.ttf') format('truetype');
 }
 
+.p-relative {
+    position: relative;
+}
+
+.z-top {
+    z-index: 1000;
+    background-color: #f7f6f5;
+}
+
+.wf-section {
+    background-color: #f7f6f5;
+}
+
 .fun-events-landing-section {
     padding: 0px 50px 0 50px;
     background-color: #FBBF2D;
