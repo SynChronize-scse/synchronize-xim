@@ -40,7 +40,7 @@ a:focus {
 }
 
 
-nav {
+.nav__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,13 +53,13 @@ nav {
     border-bottom: 1px solid #B8BFCC;
 }
 
-nav ul {
+.nav__wrapper ul {
     list-style: none;
     display: flex;
     margin: 0;
 }
 
-nav a {
+.nav__wrapper a {
     text-decoration: none;
     max-width: 5rem;
     display: inline-block;
@@ -67,26 +67,26 @@ nav a {
     color: inherit;
 }
 
-nav a:first-line {
+.nav__wrapper a:first-line {
     font-weight: bold;
 }
 
-nav .logo {
+.nav__wrapper .logo {
     display: block;
     position: absolute;
     left: 50%;
     margin-left: -5%;
 }
 
-nav .logo:hover {
+.nav__wrapper .logo:hover {
     color: initial;
 }
 
-nav .n-logo {
+.nav__wrapper .n-logo {
     font-weight: 600;
 }
 
-nav .n-logo:hover {
+.nav__wrapper .n-logo:hover {
     cursor: pointer;
 }
 
@@ -95,18 +95,18 @@ nav .n-logo:hover {
         display: none;
     } */
 
-    nav .logo {
+    .nav__wrapper .logo {
         position: static;
         margin: 0;
     }
 }
 
 @media(max-width: 27rem) {
-    nav {
+    .nav__wrapper {
         font-size: .7rem;
     }
 
-    nav a {
+    .nav__wrapper a {
         padding: 1rem .5rem;
         max-width: 4rem;
     }
@@ -117,7 +117,7 @@ nav .n-logo:hover {
         font-size: 2vw;
     }
 
-    nav {
+    .nav__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -140,7 +140,7 @@ nav .n-logo:hover {
         margin: 5rem;
     }
 
-    nav {
+    .nav__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -154,7 +154,7 @@ nav .n-logo:hover {
     }
 }
 
-nav {
+.nav__wrapper {
     border-bottom-color: #0d1f3f;
     position: absolute;
     z-index: 1000;
@@ -163,7 +163,7 @@ nav {
     padding-left: 1vw;
 }
 
-nav a:hover {
+.nav__wrapper a:hover {
     color: #fff;
 }
 
