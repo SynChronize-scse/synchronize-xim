@@ -169,7 +169,7 @@ a:focus {
 
 ruby {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: -.25rem;
 }
@@ -210,16 +210,18 @@ rt {
 
 .numbers {
     display: flex;
-    flex-direction: column;
-    gap: 1vh;
+    /* flex-direction: column; */
+    gap: 5vh;
     text-align: center;
     background: #0d1f3f;
     color: #fff;
     margin: 0;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
     position: relative;
     z-index: 10;
+    align-items: center;
+    justify-content: center;
 }
 
 .section {
@@ -229,7 +231,7 @@ rt {
 
 @media(min-width: 50rem) {
     ruby {
-        font-size: 10vw;
+        font-size: 7vw;
         letter-spacing: -.5vw;
     }
 
@@ -242,8 +244,11 @@ rt {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        /* justify-content: center; */
+        align-items: center;
+        /* gap: 15vw; */
     }
 }
 
