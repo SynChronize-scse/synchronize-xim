@@ -258,11 +258,7 @@ body:hover > #trailer {
     color: #e60707;
     opacity: 0;
   }
-  .eventlist {
-    font-size: 7vh;
-    padding: 0;
-    font-family: Samarkan;
-  }
+ 
 }
 /* card */
 
@@ -274,7 +270,7 @@ body:hover > #trailer {
   background-color: #000000;
 }
 
-section h2 {
+.Eventslist{
   font-size: 4rem;
   font-family: Samarkan;
   color: white;
@@ -342,7 +338,7 @@ section .cards .card {
 .portfolio .card img {
   width: 100%;
   padding-bottom: 10px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 14;
   object-fit: cover;
   border-radius: 7px;
 }
@@ -361,7 +357,7 @@ section .cards .card {
     width: calc(100% / 2 - 15px);
     margin-bottom: 30px;
   }
-  section h2 {
+  .Eventslist{
     margin-top: 0;
     font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
