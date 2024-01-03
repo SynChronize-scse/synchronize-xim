@@ -44,43 +44,8 @@
 
   <body>
     <div id="trailer">
-      <p id="trailer-icon" class="explore">EXPLORE</p>
+      <p id="trailer-icon" class="explore"></p>
     </div>
-
-    <!--   
-     <div class="m1">
-       <nav class="navbar">
-         <div class="toggle"></div>
- 
-         <span class="menu">
-           <a href="#">Home</a>
-           <div class="dropdown">
-             <button class="dropbtn">
-               Technical Events
-               <i class="fa fa-caret-down"></i>
-             </button>
-             <div class="dropdown-content">
-               <a href="#">Link 1</a>
-               <a href="#">Link 2</a>
-               <a href="#">Link 3</a>
-             </div>
-           </div>
-           <div class="dropdown">
-             <button class="dropbtn">
-               Fun Events
-               <i class="fa fa-caret-down"></i>
-             </button>
-             <div class="dropdown-content">
-               <a href="#">Link 1</a>
-               <a href="#">Link 2</a>
-               <a href="#">Link 3</a>
-             </div>
-           </div>
-           <a href="#">Guest Lecture</a>
-           <a href="#">Credits</a>
-         </span>
-       </nav>
-     </div> -->
 
     <section class="parallax">
       <h2 data-value="CULTURAL EVENTS" id="text">CULTURAL EVENTS</h2>
@@ -94,62 +59,45 @@
     <!-- mid section..... -->
     <section class="numbers">
       <div class="nav-signin border">
-        <p><span>TOTAL EVENTS</span></p>
+        <p><span class="heading">TOTAL EVENTS</span></p>
         <p class="nav-second">17+</p>
       </div>
       <div class="nav-signin border">
-        <p><span>CASH PRIZE</span></p>
+        <p><span class="heading1">CASH PRIZE</span></p>
         <p class="dolla">₹</p>
         <p id="number-container">10000</p>
       </div>
     </section>
     <!-- card section -->
-    <section class="sec">
-      <div class="container">
-        <h1 class="eventlist">EVENTS LISTS</h1>
-        <div class="card__container">
-          <article class="card__article">
-            <img src="standup.jpeg" alt="image" class="card__img" />
+    <section class="portfolio" id="portfolio">
+      <h2>Events Lists</h2>
 
-            <div class="card__data">
-              <h1 class="card__title">Standup Comedy</h1>
-              <span class="card__description"
-                >Yes, the class clown who always cracks everyone up? might even
-                amuse hundreds of people with you</span
-              >
-
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-          <article class="card__article">
-            <img src="algo.jpg" alt="image" class="card__img" />
-
-            <div class="card__data">
-              <h1 class="card__title">Algorythm</h1>
-              <span class="card__description"
-                >Welcoming you into the world of rich traditions,vibrant
-                colors,and captivating performances.</span
-              >
-
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-          <article class="card__article">
-            <img src="dj.jpg" alt="image" class="card__img" />
-
-            <div class="card__data">
-              <h1 class="card__title">DJ night</h1>
-              <span class="card__description"
-                >Everything has an ending and SynChronize has planned a
-                spectacular one. , The Closing Ceremony with a DJ Night by a
-                renowned DJ.</span
-              >
-
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-        </div>
-      </div>
+      <ul class="cards">
+        <li class="card">
+          <img src="algo.jpg" alt="img" />
+          <h3>Algorythm</h3>
+          <p>
+            Welcoming you into the world of rich traditions,vibrant colors,and
+            captivating performances.
+          </p>
+        </li>
+        <li class="card">
+          <img src="standup.jpeg" alt="img" />
+          <h3>Standup comedy</h3>
+          <p>
+            Yes, the class clown who always cracks everyone up? might even amuse
+            hundreds of people with you.
+          </p>
+        </li>
+        <li class="card">
+          <img src="dj.jpg" alt="img" />
+          <h3>DJ night</h3>
+          <p>
+            Everything has an ending and SynChronize has planned a spectacular
+            one. , The Closing Ceremony with a DJ Night by a renowned DJ.
+          </p>
+        </li>
+      </ul>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>

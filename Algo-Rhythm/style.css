@@ -126,47 +126,14 @@ body:hover > #trailer {
   align-items: center;
   background-color: #000000;
   color: #ffffff;
-  overflow: hidden;
+  
+  height: fit-content;
+  
 }
 
 /* ***********RESPONSIVENESS*********** */
 
-/* @media only screen and (max-width: 600px) {
-  
-  #text {
-    
-    font-size: 10vh;
-    
-   
-  max-width: 100%;
-  transform: translate(-70%);
 
-  text-align: left;
-  word-wrap: break-word;
-
-  }
- 
-  .parallax {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-  }
- 
-#man {
-  width: 100%;
-  height: 90%;
-  max-width: fit-content;
-  object-fit: cover;
-  
-}
-} */
 
 /* tablet */
 
@@ -239,11 +206,13 @@ body:hover > #trailer {
 /* mobile */
 @media (max-width: 768px) {
   #text {
-    font-size: 6.5vh;
+    font-size: 8.8vh;
     justify-content: center;
     align-items: center;
     padding-bottom: 10vh;
     padding-right: 60px;
+    margin-right: 120px;
+    
   }
   .parallax {
     position: relative;
@@ -292,184 +261,119 @@ body:hover > #trailer {
   }
 }
 /* card */
-.container {
-  display: grid;
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 5rem;
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 0;
+  background-color: #000000;
 }
 
-.card__container {
-  display: grid;
-  row-gap: 8rem;
-}
-.card__article {
-  position: relative;
-}
-.card__img {
-  width: 400px;
-  border-radius: 1.5rem;
-  background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%);
+section h2 {
+  font-size: 4rem;
+  font-family: Samarkan;
+  color: white;
 
 }
-.rgb::after {
-  content:"";
-  background: linear-gradient
-  (45deg,
-  #ff0000 0%, 
-  #ff9a00 10%,
-  #d0de21 20%,
-  #4fdc4a 30%, 
-  #3fdad8 40%,
-  #2fc9e2 50%, 
-  #1c7fee 60%, 
-  #5f15f2 70%, 
-  #ba0cf8 80%, 
-  #fb07d9 90%, 
-  #ff0000 100%  )
+
+section > p {
+  text-align: center;
+}
+
+section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+section.about {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.about .company-info {
+  margin-top: 30px;
+}
+
+.about h3 {
+  margin: 30px 0 10px;
+}
+
+.about .team {
+  text-align: left;
+  width: 100%;
+}
+
+.about .team ul {
+  padding-left: 20px;
+}
+
+section .cards .card {
+  background: #fff;
+  padding: 40px 15px;
+  list-style: none;
+  border-radius: 7px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 40px;
+  width: calc(100% / 3 - 30px);
+  text-align: center;
+}
+
+.portfolio .cards .card {
+  padding: 0 0 20px;
+}
+
+.services .card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.portfolio .card img {
+  width: 100%;
+  padding-bottom: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.cards .card p {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 860px)
+{
+  section > p {
+    text-align: center;
+  }
+
+  section .cards .card {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+  }
+  section h2 {
+    margin-top: 0;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
   
-  repeat 0% 0% / 300% 100%;
-  position: absolute;
-  inset: -3px;
-}
-
-
-.card__data {
-  width: 200px;
-  height: fit-content;
-  background-color: #7d0101;
-  padding: 1.5rem 2rem;
-  position: absolute;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
-  border-radius: 1.5rem;
-  bottom: -5rem;
-
-  margin-inline: auto;
-  margin-left: 30px;
-  background-color: rgba(22, 71, 186, 0.4);  /* Translucent white background */
-  backdrop-filter: blur(5px); 
+  }
   
 }
-
-.card__description {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: 0.25rem;
-  font-family: 'Comfortaa', sans-serif;
+@media screen and (max-width: 560px) {
+  section .cards .card {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   
-}
-.card__title {
-  font-weight: 1000;
-  font-size: 25px;
-  
-  margin-bottom: 0.75rem;
-  font-family: Cyber Nova;
-}
-.card__button {
-  text-decoration: none;
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  color: var(--first-color);
-}
-.card__button:hover {
-  text-decoration: underline;
-}
-
-/* Naming animations in hover */
-/* .card__article:hover .card__data {
-  animation: show-data 1s forwards;
-  opacity: 1;
-  transition: opacity .3s;
-}
-.card__article:hover {
-  animation: remove-overflow 2s forwards;
-}
-
-.card__article:not(:hover) {
-  animation: show-overflow 2s forwards;
-}
-
-.card__article:not(:hover) .card__data {
-  animation: remove-data 1s forwards;
-} */
-
-/* Card animation */
-/* @keyframes show-data {
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(-7rem);
-  }
-}
-
-@keyframes remove-overflow {
-  to {
-    overflow: initial;
-  }
-}
-
-@keyframes remove-data {
-  0% {
-    transform: translateY(-7rem);
-  }
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(.5rem);
-  }
-}
-
-@keyframes show-overflow {
-  0% {
-    overflow: initial;
-    pointer-events: none;
-  }
-  50% {
-    overflow: hidden;
-  }
-} */
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 340px) {
-  .container {
-    margin-inline: 1rem;
-  }
-
-  .card__data {
-    width: 250px;
-    padding: 1rem;
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 768px) {
-  .card__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  :root {
-    --h2-font-size: 1.5rem;
-    --small-font-size: 0.875rem;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 1120px) {
-  .card__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .card__img {
-    width: 348px;
-  }
-  .card__data {
-    padding-inline: 2.5rem;
-  }
 }
 
 /* mid section */
@@ -477,14 +381,22 @@ body:hover > #trailer {
 .numbers {
   display: flex;
   height: 20vh;
-  background-color: #ffffff;
-  color: #fb0000;
+  background-color: white;
+  color: #1a3d78;
   justify-content: space-between;
   justify-content: space-around;
 }
-span {
-  font-size: 1rem;
-  font-weight: 100;
+.heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  margin-left: -10px;
+}
+.heading1{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  margin-left: 50px;
 }
 
 .nav-second {
