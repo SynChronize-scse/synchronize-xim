@@ -81,7 +81,7 @@ body {
   
   .hamburger-nav ul {
     list-style: none;
-    padding: 0;
+    padding: 13px;
     margin: 4.5%;
     display: flex;
     flex-direction: column;
@@ -143,7 +143,7 @@ body {
   .hamburger-nav ul li {
     opacity: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
+    font-size: 53px;
     transform: translateY(20px);
     transition: transform 1s, opacity 1s;
     transition-delay: 0.5s;
@@ -189,22 +189,39 @@ body {
     opacity: 1;
     box-shadow: -2px 2px 0 black;
   }
-  
+   
   @media screen and (min-width: 355px) and (max-width:750px){
     .hamburger-nav {
       width: 100%;
     }
   
     .hamburger-nav ul li {
-      padding: 5px;
+      padding: 16px;
       text-align: center;
       position: center;
+      margin-bottom: 25px;
     }
   
     .hamburger-nav ul li a {
-      font-size: 40px;
+      font-size: 200px;
   }
-}
+
+  .close-button {
+    background: none; 
+    border: none; 
+    color: beige;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    position: absolute; 
+    top: 19px;  
+    z-index: 2;
+    right: 2.3%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+} 
   
   @media screen and (min-width: 375px) and (max-width:900px){
     .hamburger-nav {
@@ -212,13 +229,63 @@ body {
     }
   
     .hamburger-nav ul li {
-      padding: 23px;
+      padding: 35px;
       text-align: center;
       position: center;
+      margin-bottom: 35px;
     }
   
     .hamburger-nav ul li a {
-      font-size: 55px;
+      font-size: 52px;
+    }
+
+    .close-button {
+      background: none; 
+      border: none; 
+      color: beige;
+      border-radius: 5px; 
+      cursor: pointer; 
+      font-weight: bold; 
+      position: absolute; 
+      top: 19px;  
+      z-index: 2;
+      right: 2.3%;
+      font-size: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width:950px){
+    .hamburger-nav {
+      width: 100%;
+    }
+  
+    .hamburger-nav ul li {
+      padding: 50px;
+      text-align: center;
+      position: center;
+      margin-bottom: 60px;
+    }
+  
+    .hamburger-nav ul li a {
+      font-size: 52px;
+    }
+
+    .close-button {
+      background: none; 
+      border: none; 
+      color: beige;
+      border-radius: 5px; 
+      cursor: pointer; 
+      font-weight: bold; 
+      position: absolute; 
+      top: 19px;  
+      z-index: 2;
+      right: 2.3%;
+      font-size: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
     }
   }
   
@@ -228,31 +295,33 @@ body {
     }
   
     .hamburger-nav ul li {
-      padding: 30px;
+      padding: 35px;
       text-align: center;
       position: center;
+      margin-bottom: 35px;
     }
   
     .hamburger-nav ul li a {
-      font-size: 75px;
+      font-size: 55px;
     }
   }
   
-  @media screen and (min-width: 370px) and (max-width:670px){
+  @media screen and (min-width: 355px) and (max-width:750px){
     .hamburger-nav {
       width: 100%;
     }
   
     .hamburger-nav ul li {
-      padding: 25px;
+      padding: 13px;
       text-align: center;
       position: center;
+      margin-bottom: 25px;
     }
   
     .hamburger-nav ul li a {
-      font-size: 40px;
+      font-size: 5px;
     }
-  }
+  } 
   
   @media screen and (min-width: 270px) and (max-width:670px){
     .hamburger-nav {
@@ -260,9 +329,44 @@ body {
     }
   
     .hamburger-nav ul li {
-      padding: 15px;
+      padding: 10px;
       text-align: center;
       position: center;
+      margin-bottom: 27px;
+    }
+  
+    .hamburger-nav ul li a {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (min-width: 680px) and (max-width: 1035px){
+    .hamburger-nav {
+      width: 100%;
+    }
+  
+    .hamburger-nav ul li {
+      padding: 35px;
+      text-align: center;
+      position: center;
+      margin-bottom: 35px;
+    }
+  
+    .hamburger-nav ul li a {
+      font-size: 45px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) and (max-width:1400px){
+    .hamburger-nav {
+      width: 100%;
+    }
+  
+    .hamburger-nav ul li {
+      padding: 7px;
+      text-align: center;
+      position: center;
+      margin-bottom: 13px;
     }
   
     .hamburger-nav ul li a {
