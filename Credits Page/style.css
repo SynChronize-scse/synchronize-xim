@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
-    background: rgb(10, 0, 15);;
+    background: rgb(10, 0, 15);
+    background-image: url(./background.avif);
+    background-position: center;
+    background-size: cover;
     font-family: 'Poppins';
     padding: 0;
     margin: 0;

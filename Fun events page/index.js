@@ -216,3 +216,88 @@ setInterval(function () {
     var y = headerRect.top + Math.random() * headerRect.height;
     fauxClick(x, y);
 }, 10000);
+
+
+
+
+// Event counter animation
+function animateCounter(el, start, end, duration, html) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        el.innerHTML = `${Math.floor(progress * (end - start) + start)}${html}`;
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+const totalEventsEl = document.getElementById("total-events");
+// animateCounter(totalEventsEl, 1, 17, 800, "+ <rt>Total Events</rt>");
+
+const totalFunEventsEl = document.getElementById("total-fun-events");
+// animateCounter(totalFunEventsEl, 1, 6, 800, "+ <rt>Fun Events</rt>");
+
+// start the animation when the div is intersected
+
+const handleEventsCounterIntersection = (entries) => {
+    entries.forEach((entrie) => {
+        if (entrie.isIntersecting) {
+            animateCounter(totalEventsEl, 1, 17, 800, "+ <rt>Total Events</rt>");
+            animateCounter(totalFunEventsEl, 1, 6, 800, "+ <rt>Fun Events</rt>");
+        }
+    })
+};
+
+const eventsCounterObserver = new IntersectionObserver(handleEventsCounterIntersection, {});
+eventsCounterObserver.observe(totalEventsEl);
+
+
+// Balloons
+// const balloonContainer = document.getElementById("balloon-container");
+
+// function random(num) {
+//     return Math.floor(Math.random() * num);
+// }
+
+// function getRandomStyles() {
+//     var r = random(255);
+//     var g = random(255);
+//     var b = random(255);
+//     var mt = random(200);
+//     var ml = random(50);
+//     var dur = random(5) + 5;
+//     return `
+//   background-color: rgba(${r},${g},${b},0.7);
+//   color: rgba(${r},${g},${b},0.7);
+//   box-shadow: inset -7px -3px 10px rgba(${r - 10},${g - 10},${b - 10},0.7);
+//   margin: ${mt}px 0 0 ${ml}px;
+//   animation: float ${dur}s ease-in infinite
+//   `;
+// }
+
+// function createBalloons(num) {
+//     for (var i = num; i > 0; i--) {
+//         var balloon = document.createElement("div");
+//         balloon.className = "balloonB";
+//         balloon.style.cssText = getRandomStyles();
+//         balloonContainer.append(balloon);
+//     }
+// }
+
+// function removeBalloons() {
+//     balloonContainer.style.opacity = 0;
+//     setTimeout(() => {
+//         balloonContainer.remove()
+//     }, 500)
+// }
+
+// window.addEventListener("load", () => {
+//     createBalloons(30)
+// });
+
+// window.addEventListener("click", () => {
+//     removeBalloons();
+// });

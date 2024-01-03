@@ -57,7 +57,20 @@
           </div>
           <p class="glowIn">The SynChronize Tech-Fest will be renowned for its enormous selection of scientific and technology-related activities and contests. These experiences provide you the opportunity to think creatively, in contrast to dry textbook study. </p>
         </div>   
-
+        <script>
+          "use strict";
+          var glowInTexts = document.querySelectorAll(".glowIn");
+          glowInTexts.forEach(function (glowInText) {
+            var letters = glowInText.textContent.split("");
+            glowInText.textContent = "";
+            letters.forEach(function (letter, i) {
+              var span = document.createElement("span");
+              span.textContent = letter;
+              span.style.animationDelay = i * 0.05 + "s";
+              glowInText.append(span);
+            });
+          });
+          </script>
     </div>
 
     <div class="discover-title">
@@ -71,7 +84,7 @@
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>CC Contest</h1>
+            <h1>Bug Buster</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -81,13 +94,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>1 Feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>1:30pm</p>
               </div>
             </div>
             <div class="item-chips-row">
@@ -123,12 +136,12 @@
       </div>
       <div class="item-card">
         <img
-          src="https://images.unsplash.com/photo-1582845512747-e42001c95638?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="https://miro.medium.com/v2/resize:fit:1400/1*OO9M5s2X7xhM7lgjFxs4VQ.png"
           alt="unsplash-OG44d93i-NJk" border="0" />
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>Debugging</h1>
+            <h1>Prompt.AI</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -138,13 +151,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>1 Feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>1:30pm</p>
               </div>
             </div>
             <div class="item-chips-row">
@@ -178,12 +191,12 @@
 
       </div>
       <div class="item-card">
-        <img src="https://www.robotman.com.au/uploads/5/3/1/7/53176611/obstacle_orig.jpg" alt="unsplash-OG44d93i-NJk"
+        <img src="https://www.onlinephotosoft.com/wp-content/uploads/Skribbl-io-3.png" alt="unsplash-OG44d93i-NJk"
           border="0" />
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>Obstacle Course</h1>
+            <h1>Tech Skribbl</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -193,13 +206,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>1 Feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>3:45pm</p>
               </div>
             </div>
             <div class="item-chips-row">
@@ -232,12 +245,12 @@
       </div>
       <div class="item-card">
         <img
-          src="https://img.rolandberger.com/img/Background-Folder/Backgrounds/RB_Dig_KIQuiz_stage_00_image_caption_w768.jpg"
+          src="https://www.sankara.ac.in/science-and-commerce/wp-content/uploads/2022/12/QUIZ-Image-01-01.png"
           alt="unsplash-OG44d93i-NJk" border="0" />
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>Tech Quiz</h1>
+            <h1>TechQ</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -247,13 +260,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>2 Feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>9:30am</p>
               </div>
             </div>
             <div class="item-chips-row">
@@ -287,12 +300,12 @@
       </div>
       <div class="item-card">
         <img
-          src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="https://miro.medium.com/v2/resize:fit:1024/0*rnYWcmRH4KbfCWzt.png"
           alt="unsplash-OG44d93i-NJk" border="0" />
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>Exhibition</h1>
+            <h1>Time Hacks</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -302,13 +315,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>2 Feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>9:30am</p>
               </div>
             </div>
             <div class="item-chips-row">
@@ -342,12 +355,12 @@
       </div>
       <div class="item-card">
         <img
-          src="https://images.unsplash.com/photo-1470506926202-05d3fca84c9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src="https://img-b.udemycdn.com/course/750x422/4625508_fba2_2.jpg"
           alt="unsplash-OG44d93i-NJk" border="0" />
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>Treasure Hunt</h1>
+            <h1>Zenous Terminus</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -357,13 +370,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>2 feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>10:00am</p>
               </div>
             </div>
             <div class="item-chips-row">
@@ -400,7 +413,7 @@
 
         <div class="item-card-body">
           <div class="item-title">
-            <h1>Pattern</h1>
+            <h1>Tech Tank</h1>
             <!-- <p>21.01.23</p> -->
           </div>
           <!-- <p class="item-date">11am -Computer Lab</p> -->
@@ -410,13 +423,13 @@
                 <span class="material-symbols-outlined">
                   event_available
                 </span>
-                <p>TBD</p>
+                <p>2 feb</p>
               </div>
               <div class="item-chip">
                 <span class="material-symbols-outlined">
                   schedule
                 </span>
-                <p>HH:MM-HH:MM</p>
+                <p>10:00am</p>
               </div>
             </div>
             <div class="item-chips-row">

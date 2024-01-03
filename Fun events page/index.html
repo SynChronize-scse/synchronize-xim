@@ -14,18 +14,21 @@
 </head>
 
 <body>
-    <nav>
-        <a href="../Home Page/index.html" class="logo">
-            SynChronize
-            <!-- <img src="Synchronize.png" alt="Synchronize Tech Fest" width="1920" height="1080"> -->
-        </a>
-        <div class="claim">XIM University Technical FEST</div>
+    <div class="nav__wrapper">
+        <!-- <a href="../Home Page/index.html" class="logo">
+            SynChronize -->
+        <!-- <img src="Synchronize.png" alt="Synchronize Tech Fest" width="1920" height="1080"> -->
+        <!-- </a> -->
+        <div class="n-logo"><a href="../Home Page/index.html">SynChronize</a></div>
+
+
+        <!-- TODO: ADD navigation menu here [Comment out the 'ul'] -->
         <ul>
             <li>
-                <a href='#work'>Events List</a>
+                <a href='#events'>Events List</a>
             </li>
         </ul>
-    </nav>
+    </div>
     <!-- <section class="header">
         <canvas class="rainbow" id="rainbow"></canvas>
         <h1>Adventure-packed Fest Ahead</h1>
@@ -70,6 +73,8 @@
             @media screen and (max-width: 600px) {
                 .bs {
                     display: none;
+                    /* overflow: auto; */
+                    /* overflow-x: hidden; */
                 }
             }
         </style>
@@ -82,249 +87,270 @@
     </div>
 
 
-    <section class="numbers">
-        <ruby>17+ <rt>Total Events</rt></ruby>
-        <ruby>6+ <rt>Fun Events</rt></ruby>
-    </section>
-    <div id="work"></div>
+    <div class="z-top p-relative">
+        <section class="numbers">
+            <ruby id="total-events">17+ <rt>Total Events</rt></ruby>
+            <ruby id="total-fun-events">6+ <rt>Fun Events</rt></ruby>
+        </section>
+        <div id="events"></div>
 
-    <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
 
-    <div class="section wf-section">
+        <div class="section wf-section">
 
-        <div class="cards__heading__wrapper">
-            <div class="cards__heading__content__left">
-                <h1 class="cards__heading">Events</h1>
+            <div class="cards__heading__wrapper">
+                <div class="cards__heading__content__left">
+                    <h1 class="cards__heading">Events</h1>
+                </div>
             </div>
+            <div class="feature-cards-wrapper">
+                <div class="feature-wrapper _2">
+                    <div class="default-wrapper">
+                        <div class="feature-card">
+                            <div class="cards__container">
+                                <div class="slide-one is--1">
+                                    <div class="card__content">
+                                        <div class="card__content__left">
+                                            <img src="./images/maze-hunt (Custom).jpg" loading="eager" alt=""
+                                                class="roadmap__image" />
+                                        </div>
+                                        <div class="card__content__right">
+                                            <div class="inner__content__right__top">
+                                                <div class="date__ribbon__wrapper">
+                                                    <div class="date__ribbon__container">
+                                                        <div class="date__ribbon__content__left">
+                                                            <h1 class="number">1-3</h1>
+                                                        </div>
+                                                        <div class="date__ribbon__content__right">
+                                                            <h1 class="date">February 2024</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner__content__right__bottom">
+                                                <h1 class="heading">Maze Hunt</h1>
+                                            </div>
+                                            <p class="card__desc">
+                                                Participants would enter a maze and would have to find an escape from
+                                                it.<br />
+                                            </p>
+                                            <a class="card__btn" href="">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-wrapper _3">
+                    <div class="default-wrapper">
+                        <div class="feature-card">
+                            <div class="cards__container">
+                                <div class="slide-one is--1">
+                                    <div class="card__content">
+                                        <div class="card__content__left">
+                                            <img src="./images/techscribbl.jpg" loading="eager" alt=""
+                                                class="roadmap__image" />
+                                        </div>
+                                        <div class="card__content__right">
+                                            <div class="inner__content__right__top">
+                                                <div class="date__ribbon__wrapper is--green">
+                                                    <div class="date__ribbon__container">
+                                                        <div class="date__ribbon__content__left is--green">
+                                                            <h1 class="number">01</h1>
+                                                        </div>
+                                                        <div class="date__ribbon__content__right">
+                                                            <h1 class="date is--green">February 2024</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner__content__right__bottom">
+                                                <h1 class="heading">TechSkribbl</h1>
+                                            </div>
+                                            <p class="card__desc">
+                                                Teams competing to guess the given technology related
+                                                words correctly and win the game. <br />
+                                            </p>
+                                            <a class="card__btn" href="">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-wrapper _4">
+                    <div class="default-wrapper">
+                        <div class="feature-card">
+                            <div class="cards__container">
+                                <div class="slide-one is--1">
+                                    <div class="card__content">
+                                        <div class="card__content__left">
+                                            <img src="./images/treaure-hunt (Custom).jpg" loading="eager" alt=""
+                                                class="roadmap__image" />
+                                        </div>
+                                        <div class="card__content__right">
+                                            <div class="inner__content__right__top">
+                                                <div class="date__ribbon__wrapper is--green">
+                                                    <div class="date__ribbon__container">
+                                                        <div class="date__ribbon__content__left is--green">
+                                                            <h1 class="number">02</h1>
+                                                        </div>
+                                                        <div class="date__ribbon__content__right">
+                                                            <h1 class="date is--green">February 2024</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner__content__right__bottom">
+                                                <h1 class="heading">Find the W</h1>
+                                            </div>
+                                            <p class="paragraph-4">
+                                                Participant would be given clues based on general knowledge by which
+                                                they
+                                                have
+                                                to complete the hunt.<br />
+                                            </p>
+                                            <a class="card__btn" href="">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-wrapper _5">
+                    <div class="default-wrapper">
+                        <div class="feature-card">
+                            <div class="cards__container">
+                                <div class="slide-one is--1">
+                                    <div class="card__content">
+                                        <div class="card__content__left">
+                                            <img src="./images/origami (Custom).jpg" loading="eager" alt=""
+                                                class="roadmap__image" />
+                                        </div>
+                                        <div class="card__content__right">
+                                            <div class="inner__content__right__top">
+                                                <div class="date__ribbon__wrapper is--green">
+                                                    <div class="date__ribbon__container">
+                                                        <div class="date__ribbon__content__left is--green">
+                                                            <h1 class="number">1-3</h1>
+                                                        </div>
+                                                        <div class="date__ribbon__content__right">
+                                                            <h1 class="date is--green">February 2024</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner__content__right__bottom">
+                                                <h1 class="heading">Origami</h1>
+                                            </div>
+                                            <p class="paragraph-4 is--4">
+                                                Origami is the Japanese art of paper folding. This activity will help
+                                                the
+                                                students engage in a creative yet fun challenge.<br />
+                                            </p>
+                                            <a class="card__btn" href="">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-wrapper _6">
+                    <div class="default-wrapper">
+                        <div class="feature-card">
+                            <div class="cards__container">
+                                <div class="slide-one is--1">
+                                    <div class="card__content">
+                                        <div class="card__content__left">
+                                            <img src="./images/e-sports.jpg" loading="eager" alt=""
+                                                class="roadmap__image" />
+                                        </div>
+                                        <div class="card__content__right">
+                                            <div class="inner__content__right__top">
+                                                <div class="date__ribbon__wrapper is--green">
+                                                    <div class="date__ribbon__container">
+                                                        <div class="date__ribbon__content__left is--green">
+                                                            <h1 class="number">1-2</h1>
+                                                        </div>
+                                                        <div class="date__ribbon__content__right">
+                                                            <h1 class="date is--green">February 2024</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner__content__right__bottom">
+                                                <h1 class="heading">E-Sports</h1>
+                                            </div>
+                                            <p class="paragraph-4">Esports (Electronic sports) is a competitive sport
+                                                where
+                                                gamers compete in certain genres of video games in a virtual, electronic
+                                                environment.</p>
+                                            <a class="card__btn" href="">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-wrapper _6">
+                    <div class="default-wrapper">
+                        <div class="feature-card">
+                            <div class="cards__container">
+                                <div class="slide-one is--1">
+                                    <div class="card__content">
+                                        <div class="card__content__left">
+                                            <img src="./images/photobooth.jpg" loading="eager" alt=""
+                                                class="roadmap__image" />
+                                        </div>
+                                        <div class="card__content__right">
+                                            <div class="inner__content__right__top">
+                                                <div class="date__ribbon__wrapper">
+                                                    <div class="date__ribbon__container">
+                                                        <div class="date__ribbon__content__left is--green">
+                                                            <h1 class="number">1-3</h1>
+                                                        </div>
+                                                        <div class="date__ribbon__content__right">
+                                                            <h1 class="date is--green">February 2024</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner__content__right__bottom">
+                                                <h1 class="heading">Photobooth</h1>
+                                            </div>
+                                            <p class="paragraph-4">
+                                                A photography corner specially designed for the participants to capture
+                                                and
+                                                cherish memories from the fest.<br />
+                                            </p>
+                                            <a class="card__btn" href="">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="feature-cards-wrapper">
-            <div class="feature-wrapper _2">
-                <div class="default-wrapper">
-                    <div class="feature-card">
-                        <div class="cards__container">
-                            <div class="slide-one is--1">
-                                <div class="card__content">
-                                    <div class="card__content__left">
-                                        <img src="./images/Escape the maze.png" loading="eager" alt=""
-                                            class="roadmap__image" />
-                                    </div>
-                                    <div class="card__content__right">
-                                        <div class="inner__content__right__top">
-                                            <div class="date__ribbon__wrapper">
-                                                <div class="date__ribbon__container">
-                                                    <div class="date__ribbon__content__left">
-                                                        <h1 class="number">02</h1>
-                                                    </div>
-                                                    <div class="date__ribbon__content__right">
-                                                        <h1 class="date">February 2024</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inner__content__right__bottom">
-                                            <h1 class="heading">Escape the Maze</h1>
-                                        </div>
-                                        <p class="card__desc">
-                                            Participants would enter a maze and would have to find an escape from
-                                            it.<br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feature-wrapper _3">
-                <div class="default-wrapper">
-                    <div class="feature-card">
-                        <div class="cards__container">
-                            <div class="slide-one is--1">
-                                <div class="card__content">
-                                    <div class="card__content__left">
-                                        <img src="./images/AI.png" loading="eager" alt="" class="roadmap__image" />
-                                    </div>
-                                    <div class="card__content__right">
-                                        <div class="inner__content__right__top">
-                                            <div class="date__ribbon__wrapper is--green">
-                                                <div class="date__ribbon__container">
-                                                    <div class="date__ribbon__content__left is--green">
-                                                        <h1 class="number">02</h1>
-                                                    </div>
-                                                    <div class="date__ribbon__content__right">
-                                                        <h1 class="date is--green">February 2024</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inner__content__right__bottom">
-                                            <h1 class="heading">Pixiefy</h1>
-                                        </div>
-                                        <p class="card__desc">
-                                            A photography corner specially designed for the participants to capture
-                                            and
-                                            cherish memories from the fest. <br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feature-wrapper _4">
-                <div class="default-wrapper">
-                    <div class="feature-card">
-                        <div class="cards__container">
-                            <div class="slide-one is--1">
-                                <div class="card__content">
-                                    <div class="card__content__left">
-                                        <img src="./images/Seize The Search.png" loading="eager" alt=""
-                                            class="roadmap__image" />
-                                    </div>
-                                    <div class="card__content__right">
-                                        <div class="inner__content__right__top">
-                                            <div class="date__ribbon__wrapper is--green">
-                                                <div class="date__ribbon__container">
-                                                    <div class="date__ribbon__content__left is--green">
-                                                        <h1 class="number">02</h1>
-                                                    </div>
-                                                    <div class="date__ribbon__content__right">
-                                                        <h1 class="date is--green">February 2024</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inner__content__right__bottom">
-                                            <h1 class="heading">Treasure Hunt</h1>
-                                        </div>
-                                        <p class="paragraph-4">
-                                            Participant would be given clues based on general knowledge by which
-                                            they
-                                            have
-                                            to complete the hunt.<br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feature-wrapper _5">
-                <div class="default-wrapper">
-                    <div class="feature-card">
-                        <div class="cards__container">
-                            <div class="slide-one is--1">
-                                <div class="card__content">
-                                    <div class="card__content__left">
-                                        <img src="./images/origami-1.png" loading="eager" alt=""
-                                            class="roadmap__image" />
-                                    </div>
-                                    <div class="card__content__right">
-                                        <div class="inner__content__right__top">
-                                            <div class="date__ribbon__wrapper is--green">
-                                                <div class="date__ribbon__container">
-                                                    <div class="date__ribbon__content__left is--green">
-                                                        <h1 class="number">03</h1>
-                                                    </div>
-                                                    <div class="date__ribbon__content__right">
-                                                        <h1 class="date is--green">February 2024</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inner__content__right__bottom">
-                                            <h1 class="heading">Origami</h1>
-                                        </div>
-                                        <p class="paragraph-4 is--4">
-                                            Origami is the Japanese art of paper folding. This activity will help
-                                            the
-                                            students engage in a creative yet fun challenge.<br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feature-wrapper _6">
-                <div class="default-wrapper">
-                    <div class="feature-card">
-                        <div class="cards__container">
-                            <div class="slide-one is--1">
-                                <div class="card__content">
-                                    <div class="card__content__left">
-                                        <img src="./images/esport-1.png" loading="eager" alt=""
-                                            class="roadmap__image" />
-                                    </div>
-                                    <div class="card__content__right">
-                                        <div class="inner__content__right__top">
-                                            <div class="date__ribbon__wrapper is--green">
-                                                <div class="date__ribbon__container">
-                                                    <div class="date__ribbon__content__left is--green">
-                                                        <h1 class="number">03</h1>
-                                                    </div>
-                                                    <div class="date__ribbon__content__right">
-                                                        <h1 class="date is--green">February 2024</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inner__content__right__bottom">
-                                            <h1 class="heading">E-Sports</h1>
-                                        </div>
-                                        <p class="paragraph-4">Esports (Electronic sports) is a competitive sport
-                                            where
-                                            gamers compete in certain genres of video games in a virtual, electronic
-                                            environment.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feature-wrapper _6">
-                <div class="default-wrapper">
-                    <div class="feature-card">
-                        <div class="cards__container">
-                            <div class="slide-one is--1">
-                                <div class="card__content">
-                                    <div class="card__content__left">
-                                        <img src="./images/AI.png" loading="eager" alt="" class="roadmap__image" />
-                                    </div>
-                                    <div class="card__content__right">
-                                        <div class="inner__content__right__top">
-                                            <div class="date__ribbon__wrapper">
-                                                <div class="date__ribbon__container">
-                                                    <div class="date__ribbon__content__left is--green">
-                                                        <h1 class="number">03</h1>
-                                                    </div>
-                                                    <div class="date__ribbon__content__right">
-                                                        <h1 class="date is--green">February 2024</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="inner__content__right__bottom">
-                                            <h1 class="heading">Photobooth</h1>
-                                        </div>
-                                        <p class="paragraph-4">
-                                            A photography corner specially designed for the participants to capture
-                                            and
-                                            cherish memories from the fest.<br />
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!-- Footer Section -->
@@ -346,26 +372,31 @@
             <div class="footer_icons">
                 <h2>FOLLOW US</h2>
                 <span>
-                  <a href="https://www.instagram.com/synchronize_xim/"><ion-icon name="logo-instagram"></ion-icon></a>
-              </span>
-              <span>
-                  <a href="https://www.linkedin.com/in/school-of-computer-science-and-engineering-career-advisory-services-43a0b61ab/"><ion-icon name="logo-linkedin"></ion-icon></a>
-              </span>
-              <span>
-                  <a href="https://github.com/SynChronize-scse"><ion-icon name="logo-github"></ion-icon></a>
-              </span>
-              <span>
-                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-              </span>
+                    <a href="https://www.instagram.com/synchronize_xim/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </span>
+                <span>
+                    <a
+                        href="https://www.linkedin.com/in/school-of-computer-science-and-engineering-career-advisory-services-43a0b61ab/"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                </span>
+                <span>
+                    <a href="https://github.com/SynChronize-scse"><ion-icon name="logo-github"></ion-icon></a>
+                </span>
+                <span>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </span>
             </div>
         </div>
-        
+
         <div class="footer_middle_part">
             <div class="footer_address">
                 <h2>FIND US</h1>
-                <ul class="footer_list_address">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.422649860272!2d85.76026141458323!3d20.15812042230442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19af103360ec8f%3A0x734b96dc8afdf0ef!2sXIM%20University!5e0!3m2!1sen!2sin!4v1674952610019!5m2!1sen!2sin" width="320" height="200" loading="lazy" style="border:5px solid rgb(62, 61, 61); border-radius:10px;"></iframe>
-                </ul>
+                    <ul class="footer_list_address">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.422649860272!2d85.76026141458323!3d20.15812042230442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19af103360ec8f%3A0x734b96dc8afdf0ef!2sXIM%20University!5e0!3m2!1sen!2sin!4v1674952610019!5m2!1sen!2sin"
+                            width="320" height="200" loading="lazy"
+                            style="border:5px solid rgb(62, 61, 61); border-radius:10px;"></iframe>
+                    </ul>
             </div>
             <div class="footer_phone_number">
                 <h2>CALL US</h2>
@@ -377,14 +408,15 @@
             <div class="footer_email">
                 <h2>MAIL US</h2>
                 <ul class="list_mail">
-                    <li><a href="mailto:techfest-scse@xim.edu.in"><ion-icon name="mail-open-outline"></ion-icon> techfest-scse@xim.edu.in</a></li>
+                    <li><a href="mailto:techfest-scse@xim.edu.in"><ion-icon name="mail-open-outline"></ion-icon>
+                            techfest-scse@xim.edu.in</a></li>
                 </ul>
             </div>
         </div>
         <hr>
         <div class="footer_ending_line">Designed and Developed with 💙 by Tech Team</div>
     </div>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

@@ -422,7 +422,7 @@ a{
 }
 .carousel .list .item .topic{
     color: #f1683a;
-    font-size: 6em !important;
+    font-size: 5em !important;
 }
 
 .carousel .list .item .des {
@@ -692,19 +692,6 @@ strong {
     }
 }
 
-.about-event {
-    text-align: center;
-}
-
-.about-event h1 {
-    font-family: 'Nova Square', sans-serif;
-    font-size: 60px;
-    color: #008080;
-    letter-spacing: 5px;
-    animation: fadeIn 1.5s ease-in-out;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
 
 .card {
     width: 400px;
@@ -827,8 +814,6 @@ strong {
 
 /* Footer Section */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 .footer_container {
   min-height: 380px;
@@ -990,6 +975,10 @@ hr {
 @media(min-width: 300px) and (max-width: 450px) {
   .footer_ending_line {
     font-size: 12px;
+  }
+
+  .footer_container li {
+    font-size: 18px;
   }
 }
 
