@@ -628,7 +628,7 @@ strong {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 90px;
 }
 
 .card img {
@@ -641,7 +641,7 @@ strong {
 .card-content {
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 
 .card button {
@@ -721,7 +721,9 @@ strong {
 
 @media screen and (min-width: 340px) and (max-width: 450px) {
     .carousel .list .item .topic {
-        font-size: 4em !important;
+        font-size: 3em !important;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .carousel .list .item .first-line {
