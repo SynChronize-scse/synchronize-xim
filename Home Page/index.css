@@ -1277,7 +1277,6 @@ hr {
     .first-section {
         min-height: 80vh;
         width: 100%;
-        background: rgb(10, 0, 15);
     }
 
     #particles-js {
