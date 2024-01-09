@@ -412,23 +412,24 @@ body {
       box-sizing: border-box;
       display: flex;
       overflow-x: hidden;
+      justify-content: center;
     }
     .logo-cont{
       width: fit-content;
       transform: translateX(15%);
       margin-top: 50px;
     }
-    h1{
-      font-size: 1.5rem;
-      color: #ffe;
-      transform: translateX(-30px);
+    .heading {
       text-align: center;
+    }
 
+    .heading h1 {
+      font-size: 40px;
     }
     marquee{
     position: absolute;
     top: 50%;
-    left: 43%;
+    left: 50%;
     transform: translate(-50%, -50%);
     max-width: 50rem;
     height: 250px;
