@@ -92,6 +92,8 @@
     justify-content: center;
     height: 100vh;
     text-transform: none;
+    z-index: 999;
+    gap: 20px;
 }
 
 .close-button {
