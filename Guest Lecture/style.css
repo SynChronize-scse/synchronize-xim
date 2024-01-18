@@ -385,7 +385,7 @@ a{
   }
 
   .hamburger-nav ul li {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     position: center;
     margin-bottom: 27px;
@@ -402,7 +402,7 @@ a{
   }
 
   .hamburger-nav ul li {
-    padding: 35px;
+    padding: 20px;
     text-align: center;
     position: center;
     margin-bottom: 35px;
@@ -419,7 +419,7 @@ a{
   }
 
   .hamburger-nav ul li {
-    padding: 7px;
+    padding: 0px;
     text-align: center;
     position: center;
     margin-bottom: 13px;
