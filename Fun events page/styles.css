@@ -348,10 +348,10 @@
     }
 
     .hamburger-nav ul li {
-        padding: 10px;
+        padding: 4px;
         text-align: center;
         position: center;
-        margin-bottom: 27px;
+        margin-bottom: 25px;
     }
 
     .hamburger-nav ul li a {
@@ -365,10 +365,10 @@
     }
 
     .hamburger-nav ul li {
-        padding: 35px;
+        padding: 8px;
         text-align: center;
         position: center;
-        margin-bottom: 35px;
+        margin-bottom: 20px;
     }
 
     .hamburger-nav ul li a {
@@ -382,16 +382,17 @@
     }
 
     .hamburger-nav ul li {
-        padding: 7px;
+        padding: 5px;
         text-align: center;
         position: center;
-        margin-bottom: 13px;
+        margin-bottom: 15px;
     }
 
     .hamburger-nav ul li a {
         font-size: 40px;
     }
 }
+
 
 .fun-events-landing-section {
     padding: 0px 50px 0 50px;
