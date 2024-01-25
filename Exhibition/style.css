@@ -456,6 +456,16 @@ a{
     transition: background-color 0.3s, color 0.3s;
 }
 
+.about-event a {
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.item a {
+  color: black;
+}
+
 strong {
     font-size: 22px;
 }
