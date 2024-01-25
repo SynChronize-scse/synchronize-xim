@@ -14,9 +14,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <style>
-    .eventsBtn a{
+    .eventsBtn a {
       position: relative;
       display: inline-block;
       color: #03e9f4;
@@ -27,22 +32,22 @@
       padding: 0px 10px;
       font-family: 'poppins';
       font-weight: 800;
-  }
-  
-  .eventsBtn a:hover{
-    background: #03e9f4;
-    color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-     text-decoration: none;
-  }
-  
-  
-  .eventsBtn a:nth-child(1){
-    filter: hue-rotate(100deg);
-  }
+    }
+
+    .eventsBtn a:hover {
+      background: #03e9f4;
+      color: #050801;
+      box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+      text-decoration: none;
+    }
+
+
+    .eventsBtn a:nth-child(1) {
+      filter: hue-rotate(100deg);
+    }
   </style>
 </head>
 
@@ -116,7 +121,7 @@
           <a href="https://rzp.io/l/QWAMq7Ho" target="_blank"><button>Pay Now</button></a>
         </div>
         <div class="eventsBtn">
-          <a href="https://forms.gle/XpkMpmg7NkFw1xbB6" target="_blank">Register for Events</a>
+          <a href="#eventsList">Register for Events</a>
         </div>
         <div id="flipdown" class="flipdown"></div>
       </div>
@@ -162,7 +167,7 @@
   </div>
 
 
-  <div class="planned-events">
+  <div class="planned-events" id="eventsList">
     <h3>PLANNED EVENTS</h3>
     <section class="card-container">
       <div class="card">
@@ -459,6 +464,71 @@
   <!-- </p> -->
   <!-- </section> -->
   <!-- Footer -->
+  <div class="logo-slider-1">
+    <h2>Our Sponsors</h2>
+    <div class="owl-carousel version-1">
+      <div>
+        <img src="https://cracku.in/latest-govt-jobs/wp-content/uploads/2020/04/MCL-Logo.jpeg">
+      </div>
+      <div>
+        <img src="https://www.unicornivc.com/assets/images/company-logo/aurassure-logo.png"> </div>
+      <div> 
+        <img src="https://arukustech.com/wp-content/uploads/2023/06/logo.webp"> </div>
+      <div> 
+        <img src="https://resources.peta.org/engaging-networks/pages/petaindia/images/facebook-thumbnail-light.png">
+      </div>
+      <div> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Thermal_Power_logo.svg/1200px-National_Thermal_Power_logo.svg.png">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.owl-carousel.version-1').owlCarousel({
+      loop: true,
+      margin: 15,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1300: {
+          items: 3,
+          nav: true
+        }
+      },
+      autoplay: true, // Enable autoplay
+      autoplayTimeout: 3000 // Set autoplay timeout to 3 seconds (3000 milliseconds)
+    });
+
+    // Slider version 2
+    $('.owl-carousel.version-2').owlCarousel({
+      loop: true,
+      margin: 15,
+      center: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: true
+        }
+      }
+    })
+  </script>
+
   <section class="footer_container">
     <div class="footer_first_part">
       <div class="footer_name">
