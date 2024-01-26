@@ -943,6 +943,9 @@ video {
   background-image: url('https://i.ibb.co/tQ1T6pc/bc-bhuyan-logo.png');
 }
 
+.sponsors__container {
+  text-align: center;
+}
 
 /* .sponcard:hover {
     background-color: bisque;
@@ -1092,7 +1095,7 @@ video {
 
 /*  Footer Section  */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 
 .footer_container {
   min-height: 380px;
