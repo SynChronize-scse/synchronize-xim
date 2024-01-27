@@ -1097,6 +1097,12 @@ video {
   font-size: 17px;
 }
 
+.fac-name {
+  font-family: 'poppins';
+  margin-top: 7px;
+  font-size: 17px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -1120,6 +1126,10 @@ video {
   }
   .oc-name {
     font-size: 15px;
+  }
+
+  .fac-name {
+    font-size: 9px;
   }
 }
 
